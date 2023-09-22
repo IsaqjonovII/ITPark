@@ -7,14 +7,10 @@ import { fontFamily, fontSize } from "constants";
 const {
   borderGray,
   gray,
-  lightGray,
-  green,
-  lightGreen,
-  darkGray,
   white,
 } = colors;
 const { md, lg } = fontSize;
-const { roboto, kanit, overpass } = fontFamily;
+const { kanit } = fontFamily;
 export default styled.header`
   width: 100%;
   height: 5rem;
