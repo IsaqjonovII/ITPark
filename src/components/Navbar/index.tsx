@@ -2,8 +2,14 @@ import { ITParkLogo } from "assets";
 import StyledNav from "./style";
 import { appRoutes } from "routes";
 import { Link } from "react-router-dom";
+import { Spiral as Hamburger } from "hamburger-react";
 
-const Navbar = () => {
+export interface INav {
+  isSidebarOpen: boolean;
+  setIsSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
   return (
     <StyledNav>
       <nav className="nav__container">
@@ -16,10 +22,18 @@ const Navbar = () => {
         <ul className="nav__menu">
           {appRoutes.map(({ key, title, path }) => (
             <li className="menu__link" key={key}>
-              <Link className="link" to={path}>{title}</Link>
+              <Link className="link" to={path}>
+                {title}
+              </Link>
             </li>
           ))}
         </ul>
+        <div className="bars">
+          <Hamburger
+            toggle={() => setIsSidebarOpen(!isSidebarOpen)}
+            toggled={isSidebarOpen}
+          />
+        </div>
       </nav>
     </StyledNav>
   );

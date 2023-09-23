@@ -1,8 +1,8 @@
-
-export const Careers = () => {
+const Careers = () => {
     return (
         <div>
             
         </div>
     )
 }
+export default Careers

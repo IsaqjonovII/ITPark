@@ -1,9 +1,9 @@
-const Residents = () => {
 
+const About = () => {
     return (
         <div>
             
         </div>
     )
 }
-export default Residents
+export default About

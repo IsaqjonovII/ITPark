@@ -1,3 +1,4 @@
 import ITParkLogo from "./ITP_logo.png";
-
-export { ITParkLogo };
+import BG from "./bg.svg";
+import BG2 from "./body-bg.png";
+export { ITParkLogo, BG, BG2 };
