@@ -4,11 +4,7 @@ import { pxToRem } from "utils";
 import { layout } from "styles/mixins";
 import { fontFamily, fontSize } from "constants";
 
-const {
-  borderGray,
-  gray,
-  white,
-} = colors;
+const { borderGray, gray, white } = colors;
 const { md, lg } = fontSize;
 const { kanit } = fontFamily;
 export default styled.header`

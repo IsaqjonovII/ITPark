@@ -23,7 +23,6 @@ export const APP_ROUTES = {
     FAQ_ROUTE: "/faq",
     CAREERS_ROUTE: "/careers",
     BLOG_ROUTE: "/blog",
-    SUPPORT_ROUTE: "/support",
     ERROR_404: "/404",
   };
   
