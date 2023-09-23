@@ -4,17 +4,13 @@ import { pxToRem } from "utils";
 import { layout } from "styles/mixins";
 import { fontFamily, fontSize } from "constants";
 
-const {
-  borderGray,
-  gray,
-  white,
-} = colors;
-const { md, lg } = fontSize;
+const { borderGray, gray, white, lightGreen } = colors;
+const { sm, md, lg, xxl } = fontSize;
 const { kanit } = fontFamily;
 export default styled.header`
   width: 100%;
   height: 5rem;
-  background-color: ${gray}80;
+  background-color: ${gray}30;
   backdrop-filter: blur(8px) brightness(1) contrast(1) grayscale(0)
     hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
   border-bottom: ${pxToRem(1)} solid ${borderGray}10;
@@ -24,6 +20,7 @@ export default styled.header`
     width: 100%;
     max-width: ${pxToRem(1550)};
     ${layout("flex")}
+    margin: 0 auto;
   }
   color: #30d70f;
 
@@ -53,11 +50,65 @@ export default styled.header`
     &:hover {
       cursor: pointer;
       .logo__img {
-        filter: drop-shadow(0 ${pxToRem(0)} ${pxToRem(10)} ${white}30);
+        filter: drop-shadow(0 ${pxToRem(0)} ${pxToRem(10)} ${white}40);
       }
       .logo__text {
-        text-shadow: 0 ${pxToRem(2)} ${pxToRem(100)} ${white};
+        text-shadow: 0 ${pxToRem(2)} ${pxToRem(50)} ${white};
       }
+    }
+  }
+  .nav__menu {
+    ${layout("flex")}
+    font-family: ${kanit};
+    font-size: ${pxToRem(20)};
+    color: ${white};
+    width: auto;
+    height: ${xxl};
+    padding: 0 ${md};
+    .menu__link {
+      margin: 0 ${pxToRem(20)};
+      position: relative;
+      transition: color 300ms ease-in-out;
+      a {
+        padding: ${sm} 0;
+        ${layout("flex")}
+      }
+      &:first-child {
+        display: none;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: ${pxToRem(8)};
+        left: 0;
+        width: 100%;
+        height: ${pxToRem(2)};
+        background-color: ${lightGreen};
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 600ms ease-in-out;
+      }
+      &:hover::before {
+        transform: scaleX(1.3);
+        transition: 250ms ease-in-out;
+      }
+      &:hover {
+        color: ${lightGreen};
+        transition: 200ms ease-in-out;
+      }
+    }
+  }
+  .bars {
+    display: none;
+    color: ${white};
+  }
+
+  @media screen and (max-width: ${pxToRem(1024)}) {
+    .nav__menu {
+      display: none;
+    }
+    .bars {
+      display: block;
     }
   }
 `;
