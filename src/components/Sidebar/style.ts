@@ -14,7 +14,7 @@ export default styled.div`
   position: absolute;
   right: 0;
   top: 5rem;
-  background-color: ${darkGray}40;
+  background-color: ${darkGray}50;
   padding: ${pxToRem(50)};
   text-align: center;
   color: ${white};

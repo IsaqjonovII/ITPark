@@ -15,9 +15,11 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
       <nav className="nav__container">
         <div className="nav__logo">
           <img className="logo__img" src={ITParkLogo} alt="" />
-          <h1 className="logo__text">
-            IT Park <br /> <span>Tashkent region</span>{" "}
-          </h1>
+          <Link to="/">
+            <h1 className="logo__text">
+              IT Park <br /> <span>Tashkent region</span>{" "}
+            </h1>
+          </Link>
         </div>
         <ul className="nav__menu">
           {appRoutes.map(({ key, title, path }) => (

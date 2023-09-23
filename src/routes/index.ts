@@ -1,22 +1,26 @@
 import React from "react";
+import APP_ROUTES from "constants";
 import { IRoutes } from "interfaces/routes";
 const Home = React.lazy(() => import("pages/Home"));
 const News = React.lazy(() => import("pages/News"));
 // const Careers = React.lazy(() => import("pages/Careers"));
 const Residents = React.lazy(() => import("pages/Residents"));
-const FAQ = React.lazy(() => import("pages/FAQ"));
+const Faq = React.lazy(() => import("pages/FAQ"));
 const Contact = React.lazy(() => import("pages/Contact"));
 const About = React.lazy(() => import("pages/About"));
-import APP_ROUTES from "constants";
+const Startups = React.lazy(() => import("pages/Startups"));
+const Education = React.lazy(() => import("pages/Education"));
 
 const {
   MAIN,
-  ABOUT_ROUTE,
-  RESIDENTS_ROUTE,
-  NEWS_ROUTE,
-  FAQ_ROUTE,
+  ABOUT,
+  RESIDENTS,
+  NEWS,
+  FAQ,
   // CAREERS_ROUTE,
-  CONTACT_ROUTE,
+  CONTACT,
+  STARTUPS,
+  EDUCATION,
 } = APP_ROUTES;
 export const appRoutes: IRoutes[] = [
   {
@@ -25,33 +29,45 @@ export const appRoutes: IRoutes[] = [
     Component: Home,
   },
   {
-    key: "about",
-    path: ABOUT_ROUTE,
-    Component: About,
-    title: "About"
+    key: "startups",
+    path: STARTUPS,
+    Component: Startups,
+    title: "Start-Ups",
+  },
+  {
+    key: "education",
+    path: EDUCATION,
+    Component: Education,
+    title: "Education",
   },
   {
     key: "residents",
-    path: RESIDENTS_ROUTE,
+    path: RESIDENTS,
     Component: Residents,
     title: "Residents",
   },
   {
+    key: "about",
+    path: ABOUT,
+    Component: About,
+    title: "About",
+  },
+  {
     key: "news",
-    path: NEWS_ROUTE,
+    path: NEWS,
     Component: News,
     title: "News",
   },
+    {
+      key: "faq",
+      path: FAQ,
+      Component: Faq,
+      title: "FAQ",
+    },
   {
     key: "contact",
-    path: CONTACT_ROUTE,
+    path: CONTACT,  
     Component: Contact,
     title: "Contact",
-  },
-  {
-    key: "faq",
-    path: FAQ_ROUTE,
-    Component: FAQ,
-    title: "FAQ",
   },
 ];
