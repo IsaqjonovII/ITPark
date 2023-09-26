@@ -4,6 +4,7 @@ import Sidebar from "components/Sidebar";
 import { useState } from "react";
 import { appRoutes } from "routes";
 import { Routes, Route } from "react-router-dom";
+import Loader from "components/Loader";
 
 function App() {
   const [isSidebarOpen, setisSidebarOpen] = useState<boolean>(false);
@@ -28,6 +29,7 @@ function App() {
         ))}
       </Routes>
       <Footer />
+      <Loader />
     </div>
   );
 }
