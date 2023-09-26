@@ -2,12 +2,14 @@ import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import Sidebar from "components/Sidebar";
 import { useState } from "react";
-import { Switch, Route } from "react-router-dom";
 import { appRoutes } from "routes";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [isSidebarOpen, setisSidebarOpen] = useState<boolean>(false);
-  isSidebarOpen ? (document.body.style.overflowY = "hidden") : "auto";
+  isSidebarOpen
+    ? (document.body.style.overflowY = "hidden")
+    : (document.body.style.overflowY = "auto");
   return (
     <div className="app">
       <Navbar
@@ -20,11 +22,11 @@ function App() {
           setIsSidebarOpen={setisSidebarOpen}
         />
       )}
-      <Switch>
+      <Routes>
         {appRoutes.map(({ key, path, Component }) => (
-          <Route key={key} path={path} component={Component} />
+          <Route key={key} path={path} element={<Component />} />
         ))}
-      </Switch>
+      </Routes>
       <Footer />
     </div>
   );
