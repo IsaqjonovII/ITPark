@@ -1,5 +1,6 @@
 import { colors } from "constants/colors";
 import { createGlobalStyle } from "styled-components";
+import { pxToRem } from "utils";
 
 const { darkGray, green } = colors;
 export default createGlobalStyle`
@@ -21,5 +22,13 @@ export default createGlobalStyle`
     }
     ::selection {
         background-color: ${green}40;
+    }
+    ::-webkit-scrollbar {
+        width: ${pxToRem(8)};
+        background-color: ${green};
+    }
+    ::-webkit-scrollbar-thumb {
+        width: 100%;
+        background-color: ${darkGray};
     }
 `;

@@ -21,6 +21,7 @@ export default styled.main`
     text-align: center;
     color: ${white};
     font-weight: 700;
+    user-select: none;
     text-shadow: ${pxToRem(5)} ${pxToRem(5)} ${pxToRem(0)} ${lightGray};
     span {
       color: ${lightGreen};
