@@ -13,7 +13,7 @@ export default styled.main`
   padding-bottom: 5rem;
   .home__content {
     position: absolute;
-    z-index: 999;
+    z-index: 99;
   }
   .main__title {
     font-size: calc(${pxToRem(20)} + 3vw);

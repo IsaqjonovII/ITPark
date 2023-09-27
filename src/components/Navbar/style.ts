@@ -16,7 +16,7 @@ export default styled.header`
   border-bottom: ${pxToRem(1)} solid ${borderGray}10;
   padding: 0 ${pxToRem(40)};
   position: relative;
-  z-index: 999;
+  z-index: 99;
   ${layout("flex")}
   .nav__container {
     width: 100%;
