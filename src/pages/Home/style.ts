@@ -20,7 +20,7 @@ export default styled.main`
     text-shadow: ${pxToRem(5)} ${pxToRem(5)} ${pxToRem(0)} ${lightGray};
     span {
       color: ${lightGreen};
-      text-shadow: 0 0 ${pxToRem(40)} ${lightGreen}40;
+      text-shadow: 0 0 ${pxToRem(0)} ${lightGreen}40;
       animation: glowText 2s infinite linear alternate;
     }
   }
@@ -36,7 +36,7 @@ export default styled.main`
   }
   @keyframes glowTextSM {
     to {
-      text-shadow: 0 0 ${pxToRem(100)} ${lightGreen};
+      text-shadow: 0 0 ${pxToRem(20)} ${lightGreen};
     }
   }
 `;
