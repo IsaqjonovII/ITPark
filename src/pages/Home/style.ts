@@ -24,7 +24,17 @@ export default styled.main`
       animation: glowText 2s infinite linear alternate;
     }
   }
+  @media screen and (max-width: ${pxToRem(678)}){
+    .main__title span {
+      animation: glowTextSM 2s infinite linear alternate;
+    }
+  }
   @keyframes glowText {
+    to {
+      text-shadow: 0 0 ${pxToRem(100)} ${lightGreen};
+    }
+  }
+  @keyframes glowTextSM {
     to {
       text-shadow: 0 0 ${pxToRem(100)} ${lightGreen};
     }
