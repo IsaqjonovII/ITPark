@@ -11,9 +11,6 @@ const Loader = () => {
       setIsLoading(false);
     }, 1000);
   }, []);
-
-  console.log(isLoading);
-
   return (
     <StyledLoader>
       <div className={isLoading ? "loading" : "not__loading"}>
