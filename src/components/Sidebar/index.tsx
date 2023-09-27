@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import StyledSidebar from "./style";
-import { appRoutes } from "routes";
 import { INav } from "components/Navbar";
+import { navRoutes } from "routes/navroutes";
 
 const Sidebar = ({ setIsSidebarOpen }: INav) => {
   return (
     <StyledSidebar>
-      {appRoutes.map(({ key, title, path }) => (
+      {navRoutes.map(({ key, title, path }) => (
         <li
           className="sidebar__link"
           key={key}

@@ -15,7 +15,9 @@ export default styled.header`
     hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
   border-bottom: ${pxToRem(1)} solid ${borderGray}10;
   padding: 0 ${pxToRem(40)};
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
   z-index: 99;
   ${layout("flex")}
   .nav__container {
@@ -76,9 +78,6 @@ export default styled.header`
         padding: ${sm} 0;
         ${layout("flex")}
       }
-      &:first-child {
-        display: none;
-      }
       &::before {
         content: "";
         position: absolute;
@@ -115,8 +114,7 @@ export default styled.header`
   }
   @media (max-width: ${pxToRem(550)}) {
     padding: 0 ${pxToRem(15)};
-    .nav__logo {
-      max-width: ${pxToRem(180)};
+  
       .logo__img {
         max-width: ${pxToRem(45)};
       }
@@ -126,6 +124,6 @@ export default styled.header`
           font-size: ${pxToRem(16)};
         }
       }
-    }
+  
   }
 `;
