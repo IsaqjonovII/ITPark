@@ -9,7 +9,7 @@ const Loader = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 0);
+    }, 1000);
   }, []);
   return (
     <StyledLoader>
