@@ -8,5 +8,5 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "@", replacement: "/src" }],
   },
-  assetsInclude: /\.(png|jpe?g|gif|svg)$/i,
+  // assetsInclude: /\.(png|jpe?g|gif|svg)$/i,
 });
