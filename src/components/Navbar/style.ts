@@ -102,13 +102,27 @@ export default styled.header`
     display: none;
     color: ${white};
   }
-
-  @media screen and (max-width: ${pxToRem(1024)}) {
+  @media screen and (max-width: ${pxToRem(1124)}) {
     .nav__menu {
       display: none;
     }
     .bars {
       display: block;
+    }
+  }
+  @media (max-width: ${pxToRem(550)}) {
+    padding: 0 ${pxToRem(15)};
+    .nav__logo {
+      max-width: ${pxToRem(180)};
+      .logo__img {
+        max-width: ${pxToRem(45)};
+      }
+      .logo__text {
+        font-size:${pxToRem(25)};
+        span {
+          font-size: ${pxToRem(16)};
+        }
+      }
     }
   }
 `;

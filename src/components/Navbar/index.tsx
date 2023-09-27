@@ -1,4 +1,4 @@
-import { ITParkLogo } from "assets";
+import { LOGO } from "assets";
 import StyledNav from "./style";
 import { appRoutes } from "routes";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
     <StyledNav>
       <nav className="nav__container">
         <div className="nav__logo">
-          <img className="logo__img" src={ITParkLogo} alt="" />
+          <img className="logo__img" src={LOGO} alt="" />
           <Link to="/">
             <h1 className="logo__text">
               IT Park <br /> <span>Tashkent region</span>{" "}

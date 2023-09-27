@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import GlobalStyles from "styles";
+import Loader from "components/Loader/index.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <GlobalStyles />
-    <Suspense fallback={<div>shashme tur!!! tayyor bo'lyapti</div>}>
+    <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <App />
       </BrowserRouter>

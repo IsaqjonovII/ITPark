@@ -1,15 +1,16 @@
-import React from "react";
+import { lazy } from "react";
 import APP_ROUTES from "constants";
 import { IRoutes } from "interfaces/routes";
-const Home = React.lazy(() => import("pages/Home"));
-const News = React.lazy(() => import("pages/News"));
-// const Careers = React.lazy(() => import("pages/Careers"));
-const Residents = React.lazy(() => import("pages/Residents"));
-const Faq = React.lazy(() => import("pages/FAQ"));
-const Contact = React.lazy(() => import("pages/Contact"));
-const About = React.lazy(() => import("pages/About"));
-const Startups = React.lazy(() => import("pages/Startups"));
-const Education = React.lazy(() => import("pages/Education"));
+const Home = lazy(() => import("pages/Home"));
+const News = lazy(() => import("pages/News"));
+// const Careers = lazy(() => import("pages/Careers"));
+const Residents = lazy(() => import("pages/Residents"));
+const Faq = lazy(() => import("pages/FAQ"));
+const Contact = lazy(() => import("pages/Contact"));
+const About = lazy(() => import("pages/About"));
+const Startups = lazy(() => import("pages/Startups"));
+const Education = lazy(() => import("pages/Education"));
+
 
 const {
   MAIN,
@@ -32,7 +33,7 @@ export const appRoutes: IRoutes[] = [
     key: "startups",
     path: STARTUPS,
     Component: Startups,
-    title: "Start-Ups",
+    title: "Startups",
   },
   {
     key: "education",

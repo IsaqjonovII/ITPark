@@ -19,8 +19,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./src",
+    "baseUrl": "src",
   },
-  "include": ["src"],
+  "include": ["src", "images.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
