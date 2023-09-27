@@ -4,5 +4,9 @@ export interface IRoutes {
   key: string | number;
   path: string;
   Component: React.ReactNode | any;
-  title?: string;
+}
+export interface INavRoutes {
+  key: string;
+  path: string;
+  title: string;
 }

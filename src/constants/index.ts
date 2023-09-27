@@ -25,5 +25,6 @@ export const APP_ROUTES = {
   ERROR_404: "/404",
   EDUCATION: "/education",
   STARTUPS: "/startups",
+  STARTUP_INFO: "/startups/:id",
 };
 export default APP_ROUTES;

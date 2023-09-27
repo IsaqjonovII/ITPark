@@ -1,6 +1,6 @@
 import { LOGO } from "assets";
 import StyledNav from "./style";
-import { appRoutes } from "routes";
+import { navRoutes } from "routes/navroutes";
 import { Link } from "react-router-dom";
 import { Spiral as Hamburger } from "hamburger-react";
 
@@ -22,7 +22,7 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
           </div>
         </Link>
         <ul className="nav__menu">
-          {appRoutes.map(({ key, title, path }) => (
+          {navRoutes.map(({ key, title, path }) => (
             <li className="menu__link" key={key}>
               <Link className="link" to={path}>
                 {title}
