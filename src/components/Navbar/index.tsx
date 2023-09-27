@@ -13,14 +13,14 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
   return (
     <StyledNav>
       <nav className="nav__container">
-        <div className="nav__logo">
-          <img className="logo__img" src={LOGO} alt="" />
-          <Link to="/">
+        <Link to="/">
+          <div className="nav__logo">
+            <img className="logo__img" src={LOGO} alt="" />
             <h1 className="logo__text">
               IT Park <br /> <span>Tashkent region</span>{" "}
             </h1>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <ul className="nav__menu">
           {appRoutes.map(({ key, title, path }) => (
             <li className="menu__link" key={key}>

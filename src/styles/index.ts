@@ -1,4 +1,3 @@
-import { BG } from "assets";
 import { colors } from "constants/colors";
 import { createGlobalStyle } from "styled-components";
 
@@ -11,7 +10,6 @@ export default createGlobalStyle`
     }
     body {
         background-color: ${darkGray};
-        background-image: url(${BG});
     }
     a {
         text-decoration: none;

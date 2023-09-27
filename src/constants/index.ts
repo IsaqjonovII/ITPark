@@ -10,7 +10,6 @@ export enum fontFamily {
   overpass = "'Overpass', sans-serif",
   roboto = "'Roboto', sans-serif",
 }
-
 export const APP_ROUTES = {
   MAIN: "/",
   NEWS: "/news",
@@ -27,5 +26,4 @@ export const APP_ROUTES = {
   EDUCATION: "/education",
   STARTUPS: "/startups",
 };
-
 export default APP_ROUTES;

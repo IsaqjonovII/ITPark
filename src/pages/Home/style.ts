@@ -11,6 +11,10 @@ export default styled.main`
   display: grid;
   place-items: center;
   padding-bottom: 5rem;
+  .home__content {
+    position: absolute;
+    z-index: 999;
+  }
   .main__title {
     font-size: calc(${pxToRem(20)} + 3vw);
     font-family: ${overpass};
@@ -24,9 +28,9 @@ export default styled.main`
       animation: glowText 2s infinite linear alternate;
     }
   }
-  @media screen and (max-width: ${pxToRem(678)}){
+  @media screen and (max-width: ${pxToRem(678)}) {
     .main__title span {
-      animation: glowTextSM 2s infinite linear alternate;
+      animation: glowTextSM 2s infinit e linear alternate;
     }
   }
   @keyframes glowText {

@@ -15,6 +15,8 @@ export default styled.header`
     hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
   border-bottom: ${pxToRem(1)} solid ${borderGray}10;
   padding: 0 ${pxToRem(40)};
+  position: relative;
+  z-index: 999;
   ${layout("flex")}
   .nav__container {
     width: 100%;
@@ -41,6 +43,7 @@ export default styled.header`
       color: ${white};
       font-size: ${lg};
       line-height: 0.68;
+      margin-left: ${pxToRem(10)};
       font-family: ${kanit};
       span {
         font-size: ${md};
