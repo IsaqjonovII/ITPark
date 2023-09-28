@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { layout } from "styles/mixins";
 import { pxToRem } from "utils";
 
-const { md, xxl, xl } = fontSize;
-const { green, gray, white, lightGreen } = colors;
+const { xl } = fontSize;
+const { white, lightGreen } = colors;
 const { kanit, overpass } = fontFamily;
 export default styled.section`
   padding: ${pxToRem(30)};

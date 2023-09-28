@@ -31,7 +31,7 @@ const ParticlesJSX = () => {
           },
           modes: {
             push: {
-              quantity: 3,
+              quantity: 2,
               links: {
                 enable: false,
                 opacity: 0.5,
@@ -39,9 +39,9 @@ const ParticlesJSX = () => {
               },
             },
             connect: {
-              distance: 80,
+              distance: 100,
               links: {
-                opacity: 0.5,
+                opacity: 0.2,
               },
               radius: 60,
             },
@@ -75,17 +75,17 @@ const ParticlesJSX = () => {
             density: {
               enable: true,
             },
-            value: 80,
+            value: 100,
           },
           opacity: {
-            value: 0.5,
+            value: .4,
           },
           shape: {
             type: "circle",
           },
           size: {
             random: true,
-            value: 5,
+            value: 8,
           },
         },
       }}

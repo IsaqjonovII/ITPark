@@ -26,4 +26,5 @@ export const generateCourseTypes = (): ICourseTypes[] =>
     id: index,
     name: type,
     description: "Some text",
+    Icon: icons[index],
   }));
