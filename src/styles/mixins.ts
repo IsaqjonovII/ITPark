@@ -19,5 +19,5 @@ export const layout = (layoutStyle: string, gridLayout?: TGridLayout) => css`
       });
        grid-template-rows: repeat(${gridLayout?.rows}, ${
         gridLayout?.rowsH ?? "1fr"
-      })`}
+      });`}
 `;
