@@ -1,20 +1,15 @@
-import { startups_data } from "mocks";
+import { startups_data } from "static";
 import StyledStartups from "./style";
-import { Link } from "react-router-dom";
-import APP_ROUTES from "constants";
+import IconCard from "components/Card/Icon";
 
-const { STARTUPS } = APP_ROUTES;
 const Startups = () => {
   return (
     <StyledStartups>
       <div className="startup__categories">
         <h1 className="startup__title">Startups Directions</h1>
         <div className="categories__wrp">
-          {startups_data.map(({ id, name, Icon }) => (
-            <Link key={id} to={`${STARTUPS}/${id}`} className="category__card">
-              <Icon />
-              <p>{name}</p>
-            </Link>
+          {startups_data.map((data) => (
+            <IconCard key={data.id} {...data} />
           ))}
         </div>
       </div>

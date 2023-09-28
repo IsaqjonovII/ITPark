@@ -12,3 +12,10 @@ export interface IStartupTypes {
   title: string;
   type: string;
 }
+export interface ICourse {
+  id: number | string;
+  name: string;
+  description: string;
+  price?: string | number;
+  Icon?: ReactElement | JSX.Element;
+}

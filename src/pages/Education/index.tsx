@@ -1,9 +1,14 @@
-
+import StyledEducation from "./style";
 
 const Education = () => {
   return (
-    <div>Education</div>
-  )
-}
+    <StyledEducation>
+      <h1 className="edu__title">IT Education</h1>
+      <br />
 
-export default Education
+      <div className="courses"></div>
+    </StyledEducation>
+  );
+};
+
+export default Education;
