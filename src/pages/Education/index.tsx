@@ -3,9 +3,13 @@ import StyledEducation from "./style";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import APP_ROUTES from "constants";
+import { useEffect } from "react";
 
 const { EDUCATION } = APP_ROUTES;
 const Education = () => {
+  useEffect(() => {
+    document.title = "ITPARK - Education"
+}, [])
   return (
     <StyledEducation>
       <h1 className="edu__title">IT Education</h1>
