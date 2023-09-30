@@ -40,8 +40,8 @@ export default styled.section`
     transition: 200ms ease-in-out;
     text-align: center;
     &:hover {
-        box-shadow: 0 ${pxToRem(5)} ${pxToRem(4)} ${green};
-        transform: translateY(-${pxToRem(2)});
+        box-shadow: 0 ${pxToRem(5)} ${pxToRem(2)} ${green};
+        transform: translateY(-${pxToRem(10)}) scale(1.06);
         cursor: pointer;
     }
     svg {
