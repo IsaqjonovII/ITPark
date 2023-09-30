@@ -1,13 +1,20 @@
+import { startups_data } from "static";
 import StyledStartups from "./style";
+import IconCard from "components/Card/Icon";
 
 const Startups = () => {
-  return <StyledStartups>
-    <div className="startup__categories">
-      <div className="categories__wrp">
-        
+  return (
+    <StyledStartups>
+      <div className="startup__categories">
+        <h1 className="startup__title">Startups Directions</h1>
+        <div className="categories__wrp">
+          {startups_data.map((data) => (
+            <IconCard key={data.id} {...data} />
+          ))}
+        </div>
       </div>
-    </div>
-  </StyledStartups>;
+    </StyledStartups>
+  );
 };
 
 export default Startups;

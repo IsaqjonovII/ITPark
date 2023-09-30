@@ -3,14 +3,14 @@ import APP_ROUTES from "constants";
 import { IRoutes } from "interfaces/routes";
 const Home = lazy(() => import("pages/Home"));
 const News = lazy(() => import("pages/News"));
-// const Careers = lazy(() => import("pages/Careers"));
 const Residents = lazy(() => import("pages/Residents"));
 const Faq = lazy(() => import("pages/FAQ"));
 const Contact = lazy(() => import("pages/Contact"));
 const About = lazy(() => import("pages/About"));
 const Startups = lazy(() => import("pages/Startups"));
 const Education = lazy(() => import("pages/Education"));
-
+const StartupInfo = lazy(() => import("pages/Startups/Info"));
+const CourseInfo = lazy(() => import("pages/Education/CourseInfo"));
 
 const {
   MAIN,
@@ -18,11 +18,13 @@ const {
   RESIDENTS,
   NEWS,
   FAQ,
-  // CAREERS_ROUTE,
   CONTACT,
   STARTUPS,
   EDUCATION,
+  STARTUP_INFO,
+  COURSE_INFO
 } = APP_ROUTES;
+
 export const appRoutes: IRoutes[] = [
   {
     key: "home",
@@ -33,42 +35,45 @@ export const appRoutes: IRoutes[] = [
     key: "startups",
     path: STARTUPS,
     Component: Startups,
-    title: "Startups",
   },
   {
     key: "education",
     path: EDUCATION,
     Component: Education,
-    title: "Education",
   },
   {
     key: "residents",
     path: RESIDENTS,
     Component: Residents,
-    title: "Residents",
   },
   {
     key: "about",
     path: ABOUT,
     Component: About,
-    title: "About",
   },
   {
     key: "news",
     path: NEWS,
     Component: News,
-    title: "News",
   },
-    {
-      key: "faq",
-      path: FAQ,
-      Component: Faq,
-      title: "FAQ",
-    },
+  {
+    key: "faq",
+    path: FAQ,
+    Component: Faq,
+  },
   {
     key: "contact",
-    path: CONTACT,  
+    path: CONTACT,
     Component: Contact,
-    title: "Contact",
+  },
+  {
+    key: "startup__info",
+    path: STARTUP_INFO,
+    Component: StartupInfo,
+  },
+  {
+    key: "courseinfo",
+    path: COURSE_INFO,
+    Component: CourseInfo,
   },
 ];

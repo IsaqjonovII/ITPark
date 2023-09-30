@@ -1,6 +1,6 @@
 import { LOGO } from "assets";
 import StyledNav from "./style";
-import { appRoutes } from "routes";
+import { navRoutes } from "routes/navroutes";
 import { Link } from "react-router-dom";
 import { Spiral as Hamburger } from "hamburger-react";
 
@@ -13,16 +13,16 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
   return (
     <StyledNav>
       <nav className="nav__container">
-        <div className="nav__logo">
-          <img className="logo__img" src={LOGO} alt="" />
-          <Link to="/">
+        <Link to="/">
+          <div className="nav__logo">
+            <img className="logo__img" src={LOGO} alt="" />
             <h1 className="logo__text">
               IT Park <br /> <span>Tashkent region</span>{" "}
             </h1>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <ul className="nav__menu">
-          {appRoutes.map(({ key, title, path }) => (
+          {navRoutes.map(({ key, title, path }) => (
             <li className="menu__link" key={key}>
               <Link className="link" to={path}>
                 {title}

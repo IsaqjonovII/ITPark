@@ -12,6 +12,7 @@ export default styled.div`
     left: 0;
     display: grid;
     place-items: center;
+    z-index: 9999;
   }
   .not__loading {
     display: none;
