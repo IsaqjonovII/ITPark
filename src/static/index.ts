@@ -1,10 +1,7 @@
 import {
   FaSackDollar,
   FaPills,
-  FaBuildingColumns,
   FaCartShopping,
-  FaSitemap,
-  FaCarRear,
   FaUserGraduate,
   FaSeedling,
 } from "react-icons/fa6";
@@ -23,7 +20,7 @@ export const startups_data: IStartupData[] = [
   },
   {
     id: "2",
-    name: "MediTech",
+    name: "MedTech",
     description:
       "A startup dedicated to revolutionizing healthcare technology.",
     type: "Medtech",
@@ -37,36 +34,13 @@ export const startups_data: IStartupData[] = [
     type: "Agrotech",
     Icon: FaSeedling,
   },
-  {
-    id: "4",
-    name: "GovTech",
-    description:
-      "A startup working towards transforming government services using technology.",
-    type: "E-Gov",
-    Icon: FaBuildingColumns,
-  },
+  
   {
     id: "5",
     name: "E-Commerce",
     description: "A startup driving innovation in the e-commerce industry.",
     type: "E-Commerce",
     Icon: FaCartShopping,
-  },
-  {
-    id: "6",
-    name: "IoT",
-    description:
-      "A startup specializing in Internet of Things (IoT) technology.",
-    type: "IoT",
-    Icon: FaSitemap,
-  },
-  {
-    id: "7",
-    name: "AutoTech",
-    description:
-      "A startup revolutionizing the automotive technology industry.",
-    type: "Autotech",
-    Icon: FaCarRear,
   },
   {
     id: "8",

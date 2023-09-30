@@ -26,5 +26,6 @@ export const APP_ROUTES = {
   EDUCATION: "/education",
   STARTUPS: "/startups",
   STARTUP_INFO: "/startups/:id",
+  COURSE_INFO: "/education/courses/:id"
 };
 export default APP_ROUTES;

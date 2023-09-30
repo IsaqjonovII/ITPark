@@ -16,7 +16,7 @@ export interface ICourseTypes {
   id: number | string;
   name: string;
   description: string;
-  Icon?: ReactElement | JSX.Element;
+  Icon?: ReactElement | JSX.Element | any;
 }
 export interface ICourse extends ICourseTypes{
   price?: string | number;
