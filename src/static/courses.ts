@@ -4,14 +4,7 @@ import { PiDesktopTowerFill } from "react-icons/pi";
 import { CgBrowser } from "react-icons/cg";
 import { MdSlowMotionVideo } from "react-icons/md";
 import { TbDeviceDesktopHeart } from "react-icons/tb";
-export const courses_data: ICourse[] = [
-  {
-    id: 0,
-    name: "Front-end",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    price: 300_000,
-  },
-];
+
 const types = [
   "Front-end",
   "Back-end",
@@ -39,3 +32,14 @@ export const generateCourseTypes = (): ICourseTypes[] =>
     description: "Some text",
     Icon: icons[index],
   }));
+
+const eduCenters = ["IT Center Revolution", "BPO School", "Yosh Avlod"];
+
+export const generateCourses = (): ICourse[] =>
+  eduCenters.map((eduName, index) => ({
+    id: index,
+    name: eduName,
+    price: 400_000,
+    period: "6 months",
+  }));
+// No. edu centers  price  period

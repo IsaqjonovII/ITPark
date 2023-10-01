@@ -13,11 +13,12 @@ export interface IStartupTypes {
   type: string;
 }
 export interface ICourseTypes {
-  id: number | string;
+  id: number;
   name: string;
-  description: string;
+  description?: string;
   Icon?: ReactElement | JSX.Element | any;
 }
 export interface ICourse extends ICourseTypes{
-  price?: string | number;
+  price: string | number;
+  period: string | Date;
 }
