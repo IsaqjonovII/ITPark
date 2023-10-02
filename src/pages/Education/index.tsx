@@ -12,30 +12,32 @@ const Education = () => {
   }, []);
   return (
     <StyledEducation>
-      <h1 className="edu__title">IT Education</h1>
-      <br />
+      <div className="container">
+        <h1 className="edu__title">IT Education</h1>
+        <br />
 
-      <div className="courses">
-        {generateCourseTypes().map(({ id, name, description, Icon }) => (
-          <Link
-            key={id}
-            to={`${EDUCATION}/courses/${id}`}
-            className="course__card"
-          >
-            <div className="card__wrp">
-              <p className="course__title">{name}</p>
+        <div className="courses">
+          {generateCourseTypes().map(({ id, name, description, Icon }) => (
+            <Link
+              key={id}
+              to={`${EDUCATION}/courses/${id}`}
+              className="course__card"
+            >
+              <div className="card__wrp">
+                <p className="course__title">{name}</p>
 
-              <div className="course__icons">
-                <Icon className="course__icon" />
-                <HiArrowUpRight className="arrow__icon" />
+                <div className="course__icons">
+                  <Icon className="course__icon" />
+                  <HiArrowUpRight className="arrow__icon" />
+                </div>
+
+                <div className="overlay">
+                  <p>{description}</p>
+                </div>
               </div>
-
-              <div className="overlay">
-                <p>{description}</p>
-              </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
     </StyledEducation>
   );

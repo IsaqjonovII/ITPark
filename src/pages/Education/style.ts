@@ -1,3 +1,4 @@
+import { eduBG } from "assets";
 import { fontFamily, fontSize } from "constants";
 import { colors } from "constants/colors";
 import styled from "styled-components";
@@ -8,9 +9,12 @@ const { xl } = fontSize;
 const { green, white, lightGreen } = colors;
 const { kanit, overpass } = fontFamily;
 export default styled.section`
-  padding: ${pxToRem(30)};
-  max-width: ${pxToRem(1550)};
+  background-image: url(${eduBG});
+.container {
   margin: 0 auto;
+  max-width: ${pxToRem(1550)};
+  padding: ${pxToRem(30)};
+}
   .edu__title {
     font-size: ${xl};
     text-align: center;

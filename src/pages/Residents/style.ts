@@ -12,7 +12,7 @@ export default styled.div`
 background-image: url(${residentsBG});
 background-attachment: fixed;
 height: auto;
-min-height: 100vh;
+min-height: 90vh;
   .pros__title {
     padding: ${pxToRem(100)} ${pxToRem(50)};
     text-align: center;
