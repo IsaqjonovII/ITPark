@@ -20,5 +20,5 @@ export interface ICourseTypes {
 }
 export interface ICourse extends ICourseTypes{
   price: string | number;
-  period: string | Date;
+  duration: string | Date;
 }

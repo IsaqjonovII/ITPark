@@ -10,7 +10,7 @@ const { kanit } = fontFamily;
 
 export default styled.section`
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 5rem);
     background-image: url(${eduBG});
     padding: ${pxToRem(30)};
 

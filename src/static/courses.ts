@@ -33,13 +33,128 @@ export const generateCourseTypes = (): ICourseTypes[] =>
     Icon: icons[index],
   }));
 
-const eduCenters = ["IT Center Revolution", "BPO School", "Yosh Avlod"];
-
-export const generateCourses = (): ICourse[] =>
-  eduCenters.map((eduName, index) => ({
-    id: index,
-    name: eduName,
-    price: 400_000,
-    period: "6 months",
-  }));
-// No. edu centers  price  period
+type TCourseData = {
+  id: number;
+  courses: ICourse[];
+};
+export const eduCentersData: TCourseData[] = [
+  {
+    id: 0,
+    courses: [
+      {
+        id: 0,
+        name: "IT Center Revolution",
+        price: 400_000,
+        duration: "6 - 8 months",
+      },
+      {
+        id: 1,
+        name: "BPO School",
+        price: 400_000,
+        duration: "6 - 8 months",
+      },
+    ],
+  },
+  {
+    id: 1,
+    courses: [
+      {
+        id: 0,
+        name: "IT Center Revolution",
+        price: 400_000,
+        duration: "8 months",
+      },
+      {
+        id: 1,
+        name: "BPO School",
+        price: 400_000,
+        duration: "8 months",
+      },
+    ],
+  },
+  {
+    id: 2,
+    courses: [
+      {
+        id: 0,
+        name: "IT Center Revolution",
+        price: 400_000,
+        duration: "12 - 14 months",
+      },
+      {
+        id: 1,
+        name: "BPO School",
+        price: 400_000,
+        duration: "10 - 12 months",
+      },
+    ],
+  },
+  {
+    id: 3,
+    courses: [
+      {
+        id: 0,
+        name: "IT Center Revolution",
+        price: 200_000,
+        duration: "1 month",
+      },
+      {
+        id: 1,
+        name: "BPO School",
+        price: 200_000,
+        duration: "1 month",
+      },
+    ],
+  },
+  {
+    id: 4,
+    courses: [
+      {
+        id: 0,
+        name: "IT Center Revolution",
+        price: 400_000,
+        duration: "6 months",
+      },
+      {
+        id: 1,
+        name: "BPO School",
+        price: 400_000,
+        duration: "6 months",
+      },
+    ],
+  },
+  {
+    id: 5,
+    courses: [
+      {
+        id: 0,
+        name: "IT Center Revolution",
+        price: 600_000,
+        duration: "8 months",
+      },
+      {
+        id: 1,
+        name: "BPO School",
+        price: 600_000,
+        duration: "8 months",
+      },
+    ],
+  },
+  {
+    id: 6,
+    courses: [
+      {
+        id: 0,
+        name: "IT Center Revolution",
+        price: 600_000,
+        duration: "8 months",
+      },
+      {
+        id: 1,
+        name: "BPO School",
+        price: 600_000,
+        duration: "8 months",
+      },
+    ],
+  },
+];

@@ -3,5 +3,6 @@ import BG from "./bg.svg";
 import BG2 from "./body-bg.png";
 import logoGif from "/favicon.gif";
 import eduBG from "./edubg.svg";
+import nodata from "./nodata.png";
 
-export { LOGO, BG, BG2, logoGif, eduBG };
+export { LOGO, BG, BG2, logoGif, eduBG, nodata };

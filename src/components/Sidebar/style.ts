@@ -18,7 +18,7 @@ export default styled.div`
   padding: ${pxToRem(50)};
   text-align: center;
   color: ${white};
-  z-index: 999;
+  z-index: 9999;
   backdrop-filter: blur(8px) brightness(1) contrast(1) grayscale(0)
     hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
   border-left: ${pxToRem(1)} solid ${lightGray}80;
