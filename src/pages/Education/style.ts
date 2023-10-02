@@ -1,4 +1,3 @@
-import { eduBG } from "assets";
 import { fontFamily, fontSize } from "constants";
 import { colors } from "constants/colors";
 import styled from "styled-components";
@@ -9,7 +8,6 @@ const { xl } = fontSize;
 const { green, white, lightGreen } = colors;
 const { kanit, overpass } = fontFamily;
 export default styled.section`
-  background-image: url(${eduBG});
 .container {
   margin: 0 auto;
   max-width: ${pxToRem(1550)};

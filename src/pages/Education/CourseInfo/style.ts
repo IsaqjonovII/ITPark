@@ -1,4 +1,4 @@
-import { eduBG } from "assets";
+import { residentsBG } from "assets";
 import { fontFamily } from "constants";
 import { colors } from "constants/colors";
 import styled from "styled-components";
@@ -11,7 +11,7 @@ const { kanit } = fontFamily;
 export default styled.section`
     width: 100%;
     height: calc(100vh - 5rem);
-    background-image: url(${eduBG});
+    background-image: url(${residentsBG});
     padding: ${pxToRem(30)};
 
     .table__wrp {
