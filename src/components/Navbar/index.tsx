@@ -3,6 +3,7 @@ import StyledNav from "./style";
 import { navRoutes } from "routes/navroutes";
 import { Link } from "react-router-dom";
 import { Spiral as Hamburger } from "hamburger-react";
+import LazyImage from "components/LazyImage";
 
 export interface INav {
   isSidebarOpen: boolean;
@@ -15,7 +16,7 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
       <nav className="nav__container">
         <Link to="/">
           <div className="nav__logo">
-            <img className="logo__img" src={LOGO} alt="" />
+            <LazyImage className="logo__img" src={LOGO} alt="" />
             <h1 className="logo__text">
               IT Park <br /> <span>Tashkent region</span>{" "}
             </h1>

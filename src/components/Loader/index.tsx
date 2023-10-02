@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import StyledLoader from "./style";
 import { logoGif } from "assets";
+import LazyImage from "components/LazyImage";
 
 const Loader = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -14,7 +15,7 @@ const Loader = () => {
   return (
     <StyledLoader>
       <div className={isLoading ? "loading" : "not__loading"}>
-        <img src={logoGif} alt="" />
+        <LazyImage src={logoGif} alt="" />
       </div>
     </StyledLoader>
   );
