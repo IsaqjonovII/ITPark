@@ -19,7 +19,7 @@ export default styled.section`
     margin: ${pxToRem(20)} 0;
   }
   .courses {
-    ${layout("grid", { cols: 4, rows: 3, rowsH: pxToRem(300) })}
+    ${layout("grid", { cols: 4, rows: 2, rowsH: pxToRem(300) })}
     grid-gap: 20px;
   }
   .course__card {
