@@ -1,6 +1,5 @@
 import { notfound } from "assets";
 import styled from "styled-components";
-import { layout } from "styles/mixins";
 
 export default styled.div`
   width: 100%;
