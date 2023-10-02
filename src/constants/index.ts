@@ -22,7 +22,7 @@ export const APP_ROUTES = {
   FAQ: "/faq",
   CAREERS: "/careers",
   BLOG: "/blog",
-  ERROR_404: "/404",
+  ERROR_404: "*",
   EDUCATION: "/education",
   STARTUPS: "/startups",
   STARTUP_INFO: "/startups/:id",

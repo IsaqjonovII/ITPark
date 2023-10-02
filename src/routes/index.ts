@@ -11,6 +11,7 @@ const Startups = lazy(() => import("pages/Startups"));
 const Education = lazy(() => import("pages/Education"));
 const StartupInfo = lazy(() => import("pages/Startups/Info"));
 const CourseInfo = lazy(() => import("pages/Education/CourseInfo"));
+const NotFound = lazy(() => import("pages/404"));
 
 const {
   MAIN,
@@ -22,7 +23,8 @@ const {
   STARTUPS,
   EDUCATION,
   STARTUP_INFO,
-  COURSE_INFO
+  COURSE_INFO,
+  ERROR_404,
 } = APP_ROUTES;
 
 export const appRoutes: IRoutes[] = [
@@ -30,6 +32,11 @@ export const appRoutes: IRoutes[] = [
     key: "home",
     path: MAIN,
     Component: Home,
+  },
+  {
+    key: "not-found",
+    path: ERROR_404,
+    Component: NotFound,
   },
   {
     key: "startups",

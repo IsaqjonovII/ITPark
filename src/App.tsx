@@ -16,7 +16,7 @@ function App() {
       <Navbar
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setisSidebarOpen}
-      />
+      />  
       {isSidebarOpen && (
         <Sidebar
           isSidebarOpen={isSidebarOpen}

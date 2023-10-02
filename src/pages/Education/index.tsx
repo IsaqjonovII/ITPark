@@ -8,8 +8,8 @@ import { useEffect } from "react";
 const { EDUCATION } = APP_ROUTES;
 const Education = () => {
   useEffect(() => {
-    document.title = "ITPARK - Education"
-}, [])
+    document.title = "ITPARK - Education";
+  }, []);
   return (
     <StyledEducation>
       <h1 className="edu__title">IT Education</h1>
