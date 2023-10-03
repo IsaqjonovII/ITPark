@@ -1,4 +1,4 @@
-import{s as h,p as t,l as i,c as u,f as p,j as a,u as x}from"./index-ba88aa81.js";import{r as g}from"./residents-9969fa27.js";import{e as n}from"./courses-887f8315.js";import"./index.esm-9c7ca710.js";const f="/assets/nodata-a64bb7d3.png",{white:b,lightGray:o,darkGray:j,green:v}=u,{kanit:c}=p,N=h.section`
+import{s as h,p as t,l as i,c as u,f as p,j as a,u as x}from"./index-b4e51de9.js";import{r as g}from"./residents-9969fa27.js";import{e as n}from"./courses-c4ec0afe.js";import"./index.esm-d4a8b1af.js";const f="/assets/nodata-a64bb7d3.png",{white:b,lightGray:o,darkGray:j,green:v}=u,{kanit:c}=p,N=h.section`
     width: 100%;
     height: calc(100vh - 5rem);
     background-image: url(${g});

@@ -1,4 +1,4 @@
-import{s as n,p as s,l as a,c as r,f as d,r as c,j as e}from"./index-ba88aa81.js";import{r as o}from"./residents-9969fa27.js";const{white:t,green:i}=r,{kanit:l,overpass:m,roboto:h}=d,x=n.div`
+import{s as n,p as s,l as a,c as r,f as d,r as c,j as e}from"./index-b4e51de9.js";import{r as o}from"./residents-9969fa27.js";const{white:t,green:i}=r,{kanit:l,overpass:m,roboto:h}=d,x=n.div`
 background-image: url(${o});
 background-attachment: fixed;
 height: auto;
