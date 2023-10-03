@@ -1,7 +1,7 @@
-import { fontFamily } from "constants";
-import { colors } from "constants/colors";
 import styled from "styled-components";
 import { pxToRem } from "utils";
+import { fontFamily } from "constants";
+import { colors } from "constants/colors";
 
 const { lightGray, lightGreen, white } = colors;
 const { overpass } = fontFamily;

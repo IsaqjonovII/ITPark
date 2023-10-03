@@ -1,10 +1,9 @@
-import { fontFamily } from "constants";
-import { colors } from "constants/colors";
 import styled from "styled-components";
 import { pxToRem } from "utils";
+import { fontFamily } from "constants";
+import { colors } from "constants/colors";
 
 const { lightGray, darkGray, white, lightGreen } = colors;
-// const { md } = fontSize;
 const { kanit } = fontFamily;
 
 export default styled.div`

@@ -4,9 +4,7 @@ self.addEventListener('install', e => {
          return cache.addAll([
              '/',
              '/?utm_source=homescreen',
-             '/Home/About',
-             '/Home/Index',
-             '/Home/Contact'
+             '/pages/Home'
          ])
              .then(() => self.skipWaiting());
      })

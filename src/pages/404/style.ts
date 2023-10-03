@@ -1,5 +1,5 @@
-import { notfound } from "assets";
 import styled from "styled-components";
+import { notfound } from "assets";
 
 export default styled.div`
   width: 100%;

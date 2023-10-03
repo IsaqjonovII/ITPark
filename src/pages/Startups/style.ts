@@ -1,8 +1,8 @@
-import { fontFamily } from "constants";
-import { colors } from "constants/colors";
 import styled from "styled-components";
-import { layout } from "styles/mixins";
 import { pxToRem } from "utils";
+import { fontFamily } from "constants";
+import { layout } from "styles/mixins";
+import { colors } from "constants/colors";
 
 const { white, green, lightGray } = colors;
 const { overpass } = fontFamily;

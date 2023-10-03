@@ -1,9 +1,9 @@
+import styled from "styled-components";
+import { pxToRem } from "utils";
 import { residentsBG } from "assets";
 import { fontFamily } from "constants";
-import { colors } from "constants/colors";
-import styled from "styled-components";
 import { layout } from "styles/mixins";
-import { pxToRem } from "utils";
+import { colors } from "constants/colors";
 
 const { white, green } = colors;
 const { kanit, overpass, roboto } = fontFamily;

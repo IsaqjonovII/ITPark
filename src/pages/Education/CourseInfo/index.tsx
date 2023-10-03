@@ -1,7 +1,7 @@
-import { eduCentersData } from "static/courses";
-import StyledCourseInfo from "./style";
 import { useParams } from "react-router-dom";
+import StyledCourseInfo from "./style";
 import NoData from "components/NoData";
+import { eduCentersData } from "static/courses";
 
 type paramsId = {
   id: string;

@@ -1,7 +1,7 @@
-import { startups_data } from "static";
-import StyledStartups from "./style";
-import IconCard from "components/Card/Icon";
 import { useEffect } from "react";
+import StyledStartups from "./style";
+import { startups_data } from "static";
+import IconCard from "components/Card/Icon";
 
 const Startups = () => {
   useEffect(() => {

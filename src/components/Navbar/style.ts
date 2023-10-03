@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { colors } from "constants/colors";
 import { pxToRem } from "utils";
 import { layout } from "styles/mixins";
+import { colors } from "constants/colors";
 import { fontFamily, fontSize } from "constants";
 
 const { borderGray, gray, white, lightGreen } = colors;

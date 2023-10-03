@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { logoGif } from "assets";
 import StyledLoader from "./style";
 import LazyImage from "components/LazyImage";
-import { logoGif } from "assets";
 
 const Loader = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);

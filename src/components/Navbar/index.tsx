@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom";
+import { Spiral as Hamburger } from "hamburger-react";
 import { LOGO } from "assets";
 import StyledNav from "./style";
 import { navRoutes } from "routes/navroutes";
-import { Link } from "react-router-dom";
-import { Spiral as Hamburger } from "hamburger-react";
 import LazyImage from "components/LazyImage";
 
 export interface INav {

@@ -1,5 +1,5 @@
-import { nodata } from "assets";
 import styled from "styled-components";
+import { nodata } from "assets";
 import { layout } from "styles/mixins";
 
 export default styled.div`

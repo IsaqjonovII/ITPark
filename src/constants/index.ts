@@ -1,5 +1,5 @@
 export enum fontSize {
-  sm = "0.875rem", // 14px
+  sm = "0.875rem", 
   md = "1rem",
   lg = "2rem",
   xl = "3rem",

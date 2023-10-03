@@ -1,11 +1,13 @@
-import { generateCourseTypes } from "static/courses";
-import StyledEducation from "./style";
-import { HiArrowUpRight } from "react-icons/hi2";
-import { Link } from "react-router-dom";
-import APP_ROUTES from "constants";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { HiArrowUpRight } from "react-icons/hi2";
+import APP_ROUTES from "constants";
+import StyledEducation from "./style";
+import { generateCourseTypes } from "static/courses";
 
 const { EDUCATION } = APP_ROUTES;
+
+
 const Education = () => {
   useEffect(() => {
     document.title = "ITPARK - Education";

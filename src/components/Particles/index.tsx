@@ -1,8 +1,8 @@
-import { colors } from "constants/colors";
 import { useCallback } from "react";
-import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import Particles from "react-tsparticles";
 import { Engine } from "tsparticles-engine";
+import { colors } from "constants/colors";
 
 const ParticlesJSX = () => {
   const particlesInit = useCallback(async (main: Engine) => {
