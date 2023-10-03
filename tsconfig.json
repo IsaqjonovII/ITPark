@@ -21,6 +21,5 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "src",
   },
-  "include": ["src", "images.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "images.d.ts"]
 }
