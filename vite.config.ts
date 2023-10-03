@@ -7,6 +7,5 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   resolve: {
     alias: [{ find: "@", replacement: "/src" }],
-  },
-  // assetsInclude: /\.(png|jpe?g|gif|svg)$/i,
+  }
 });

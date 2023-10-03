@@ -8,9 +8,11 @@ const { xl } = fontSize;
 const { green, white, lightGreen } = colors;
 const { kanit, overpass } = fontFamily;
 export default styled.section`
-  padding: ${pxToRem(30)};
-  max-width: ${pxToRem(1550)};
+.container {
   margin: 0 auto;
+  max-width: ${pxToRem(1550)};
+  padding: ${pxToRem(30)};
+}
   .edu__title {
     font-size: ${xl};
     text-align: center;
@@ -19,7 +21,7 @@ export default styled.section`
     margin: ${pxToRem(20)} 0;
   }
   .courses {
-    ${layout("grid", { cols: 4, rows: 3, rowsH: pxToRem(300) })}
+    ${layout("grid", { cols: 4, rows: 2, rowsH: pxToRem(300) })}
     grid-gap: 20px;
   }
   .course__card {

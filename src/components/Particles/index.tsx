@@ -31,7 +31,7 @@ const ParticlesJSX = () => {
           },
           modes: {
             push: {
-              quantity: 2,
+              quantity: 1,
               links: {
                 enable: false,
                 opacity: 0.5,
@@ -75,7 +75,7 @@ const ParticlesJSX = () => {
             density: {
               enable: true,
             },
-            value: 100,
+            value: 30,
           },
           opacity: {
             value: .4,
@@ -85,7 +85,7 @@ const ParticlesJSX = () => {
           },
           size: {
             random: true,
-            value: 8,
+            value: 6,
           },
         },
       }}

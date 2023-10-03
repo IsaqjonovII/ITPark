@@ -104,7 +104,15 @@ export default styled.header`
     display: none;
     color: ${white};
   }
-  @media screen and (max-width: ${pxToRem(1124)}) {
+  @media screen and (max-width: ${pxToRem(1150)}) {
+    .nav__menu {
+
+      .menu__link {
+        margin: 0 ${pxToRem(10)};
+      }
+    }
+  }
+  @media screen and (max-width: ${pxToRem(1024)}) {
     .nav__menu {
       display: none;
     }
