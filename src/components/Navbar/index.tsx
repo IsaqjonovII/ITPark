@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Spiral as Hamburger } from "hamburger-react";
-import { LOGO } from "assets";
+import { logo2 } from "assets";
 import StyledNav from "./style";
 import { navRoutes } from "routes/navroutes";
 import LazyImage from "components/LazyImage";
@@ -14,12 +14,9 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
   return (
     <StyledNav>
       <nav className="nav__container">
-        <Link to="/">
+        <Link to="/" role="link">
           <div className="nav__logo">
-            <LazyImage className="logo__img" src={LOGO} alt="" />
-            <h1 className="logo__text">
-              IT Park <br /> <span>Tashkent region</span>{" "}
-            </h1>
+            <LazyImage className="logo__img" src={logo2} alt="IT park logo" />
           </div>
         </Link>
         <ul className="nav__menu">
@@ -31,7 +28,7 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
             </li>
           ))}
         </ul>
-        <div className="bars">
+        <div className="bars" role="button" aria-expanded={false} tabIndex={0}>
           <Hamburger
             toggle={() => setIsSidebarOpen(!isSidebarOpen)}
             toggled={isSidebarOpen}
