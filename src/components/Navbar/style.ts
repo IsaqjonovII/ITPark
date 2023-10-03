@@ -5,7 +5,7 @@ import { colors } from "constants/colors";
 import { fontFamily, fontSize } from "constants";
 
 const { borderGray, gray, white, lightGreen } = colors;
-const { sm, md, lg, xxl } = fontSize;
+const { sm, md, xxl } = fontSize;
 const { kanit } = fontFamily;
 export default styled.header`
   width: 100%;
@@ -37,20 +37,9 @@ export default styled.header`
     ${layout("flex")}
     .logo__img {
       width: 100%;
-      max-width: ${pxToRem(70)};
-      height: 90%;
+      max-width: ${pxToRem(200)};
+      height: 100%;
       object-fit: cover;
-    }
-    .logo__text {
-      color: ${white};
-      font-size: ${lg};
-      line-height: 0.68;
-      margin-left: ${pxToRem(10)};
-      font-family: ${kanit};
-      span {
-        font-size: ${md};
-        font-weight: 300;
-      }
     }
     &:hover {
       cursor: pointer;
