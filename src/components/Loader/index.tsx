@@ -8,7 +8,7 @@ const Loader = () => {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 1000);
+  }, 0);
 
   return (
     <StyledLoader>
