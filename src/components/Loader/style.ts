@@ -18,21 +18,23 @@ export default styled.div`
     place-items: center;
     z-index: 9999;
     text-align: center;
-    div {
+    .loader__wrp {
+      overflow: hidden;
+      height: ${pxToRem(300)};
       h1 {
         font-family: ${overpass};
         font-size: ${pxToRem(45)};
         color: ${white};
         opacity: 0;
-        animation: shown 550ms 1 linear;
+        animation: shown 1s 1 linear;
         transform: translateY(${pxToRem(120)});
       }
       .loader__img {
         width: 100%;
         max-width: ${pxToRem(150)};
         opacity: 0;
-        animation: shown 550ms 1 linear;
-        transform: translateY(-${pxToRem(120)});
+        animation: shown 1s 1 linear;
+        transform: translateY(${pxToRem(120)});
       }
     }
   }
@@ -43,7 +45,7 @@ export default styled.div`
   @keyframes shown {
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(-${pxToRem(30)});
     }
   }
 `;

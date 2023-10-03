@@ -8,12 +8,12 @@ const Loader = () => {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 600);
+  }, 900);
 
   return (
     <StyledLoader>
       <div className={`loader ${isLoading ? "loading" : "not__loading"}`}>
-        <div>
+        <div className="loader__wrp">
           <LazyImage className="loader__img" src={LOGO} />
           <h1>IT Park</h1>
         </div>
