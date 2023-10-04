@@ -1,19 +1,19 @@
 import { useState } from "react";
-import { logoGif } from "assets";
+import { logoMP4 } from "assets";
 import StyledLoader from "./style";
-import LazyImage from "components/LazyImage";
 
 const Loader = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
-
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 1000);
-
   return (
     <StyledLoader>
       <div className={`loader ${isLoading ? "loading" : "not__loading"}`}>
-        <LazyImage src={logoGif} />
+        <video
+          className="loader__video"
+          src={logoMP4}
+          muted
+          autoPlay
+          onEnded={() => setIsLoading(false)}
+        ></video>
       </div>
     </StyledLoader>
   );
