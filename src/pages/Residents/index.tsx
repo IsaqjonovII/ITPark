@@ -33,6 +33,7 @@ const Residents = () => {
             </p>
           </div>
         </div>
+        
       </section>
     </StyledResidents>
   );
