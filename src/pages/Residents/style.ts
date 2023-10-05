@@ -50,6 +50,30 @@ min-height: 90vh;
       }
     }
   } 
+  .testimonial {
+    padding: ${pxToRem(50)};
+    .testimonial__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .card {
+        padding: ${pxToRem(20)} ${pxToRem(35)};
+        display: grid;
+        place-items: center;
+        text-align: center;
+        svg {
+          color: ${white};
+           font-size: calc(${pxToRem(15)} + 3vw);
+        }
+        span {
+          font-size: ${pxToRem(22)};
+          margin: ${pxToRem(20)} 0 0 0;
+          font-family: ${overpass};
+          color: ${green};
+        }
+      }
+    }
+  }
   @media screen and (max-width: ${pxToRem(1024)}) {
     .pros__cards {
         ${layout("grid", { cols: 2, rows: 2 })}

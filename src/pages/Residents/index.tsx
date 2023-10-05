@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import StyledResidents from "./style";
+import { FaBuilding, FaBuildingUser, FaListCheck, FaRegPenToSquare } from "react-icons/fa6";
 
 const Residents = () => {
   useEffect(() => {
@@ -34,6 +35,26 @@ const Residents = () => {
           </div>
         </div>
         
+      </section>
+      <section className="testimonial">
+        <div className="testimonial__cards">
+          <div className="card">
+            <FaRegPenToSquare />
+            <span>Residency Clause</span>
+          </div>
+          <div className="card">
+          <FaBuildingUser />
+            <span>Become Resident</span>
+          </div>
+          <div className="card">
+          <FaListCheck />
+            <span>Requirements for <br /> Residents</span>
+          </div>
+          <div className="card">
+            <FaBuilding />
+            <span>Rent Office</span>
+          </div>
+        </div>
       </section>
     </StyledResidents>
   );
