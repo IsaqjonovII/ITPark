@@ -49,13 +49,14 @@ min-height: 90vh;
         text-shadow: 0 0 ${pxToRem(3)} ${green};
       }
     }
-  } 
+  }
   .testimonial {
     padding: ${pxToRem(50)};
     .testimonial__cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    max-width: ${pxToRem(1000)};
+      ${layout("grid", { cols: 4, rows: 1 })}
+      margin: auto;
+      /* justify-content: center; */
       .card {
         padding: ${pxToRem(20)} ${pxToRem(35)};
         display: grid;
@@ -63,7 +64,7 @@ min-height: 90vh;
         text-align: center;
         svg {
           color: ${white};
-           font-size: calc(${pxToRem(15)} + 3vw);
+          font-size: calc(${pxToRem(15)} + 3vw);
         }
         span {
           font-size: ${pxToRem(22)};
@@ -86,6 +87,12 @@ min-height: 90vh;
             }
         }
     }
+    .testimonial {
+      .testimonial__cards {
+        ${layout("grid", { cols: 2, rows: 2 })}
+        max-width: ${pxToRem(1000)};
+      }
+    }
     .pros__title {
         padding: ${pxToRem(50)};
         font-size: ${pxToRem(25)};
@@ -103,6 +110,12 @@ min-height: 90vh;
         .card:last-child {
             width: 100%;
         }
+    }
+    .testimonial {
+      .testimonial__cards {
+        ${layout("grid", { cols: 1, rows: 4 })}
+        max-width: ${pxToRem(1000)};
+      }
     }
     .pros__title {
         margin-bottom: ${pxToRem(50)};
