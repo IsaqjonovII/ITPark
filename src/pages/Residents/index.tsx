@@ -34,6 +34,7 @@ const Residents = () => {
             </p>
           </div>
         </div>
+        
       </section>
       <section className="testimonial">
         <div className="testimonial__cards">
