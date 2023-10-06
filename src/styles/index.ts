@@ -21,6 +21,17 @@ export default createGlobalStyle`
         color: inherit;
         list-style-type: none;
     }
+    .app {
+        position: relative;
+    }
+    .container__nav {
+        height: 5rem;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
     ::selection {
         background-color: ${green}40;
     }
