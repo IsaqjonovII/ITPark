@@ -18,7 +18,15 @@ export interface ICourseTypes {
   description?: string;
   Icon?: ReactElement | JSX.Element | any;
 }
-export interface ICourse extends ICourseTypes{
+export interface ICourse extends ICourseTypes {
   price: string | number;
   duration: string | Date;
+}
+export interface INews {
+  id: string | number;
+  title: string;
+  subtitle: string;
+  date: string;
+  img: string;
+  detailed_description?: string;
 }

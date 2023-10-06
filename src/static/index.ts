@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa6";
 import { IoGameControllerSharp } from "react-icons/io5";
 
-import { IStartupData, IStartupTypes } from "interfaces";
+import { INews, IStartupData, IStartupTypes } from "interfaces";
 
 export const startups_data: IStartupData[] = [
   {
@@ -34,7 +34,7 @@ export const startups_data: IStartupData[] = [
     type: "Agrotech",
     Icon: FaSeedling,
   },
-  
+
   {
     id: "5",
     name: "E-Commerce",
@@ -103,5 +103,31 @@ export const startup_types: IStartupTypes[] = [
     id: "9",
     title: "Game Dev",
     type: "game dev",
+  },
+];
+export const newsData: INews[] = [
+  {
+    id: 0,
+    title: "Big ass house",
+    subtitle: "That's fcuking crazy you know?! Whoohoa",
+    img:
+      "https://it-park.uz/storage/images/news/normal/PMZkYOqGXpeslcSiDyT8NKJeBQ4P2ERfOIcYeKZP.png",
+    date: "08-06-2023",
+  },
+  {
+    id: 1,
+    title: "CodeFest winners",
+    subtitle: "We're excited to share that we're so happy",
+    img:
+      "https://it-park.uz/storage/images/news/normal/PMZkYOqGXpeslcSiDyT8NKJeBQ4P2ERfOIcYeKZP.png",
+    date: "08-06-2023",
+  },
+  {
+    id: 2,
+    title: "CodeFest winners",
+    subtitle: "We're excited to share that we're so happy",
+    img:
+      "https://it-park.uz/storage/images/news/normal/PMZkYOqGXpeslcSiDyT8NKJeBQ4P2ERfOIcYeKZP.png",
+    date: "08-06-2023",
   },
 ];
