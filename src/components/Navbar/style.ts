@@ -15,7 +15,7 @@ export default styled.header`
     hue-rotate(0) invert(0) opacity(1) saturate(1) sepia(0);
   border-bottom: ${pxToRem(1)} solid ${borderGray}10;
   padding: 0 ${pxToRem(40)};
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99;

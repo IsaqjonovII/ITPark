@@ -11,7 +11,6 @@ const { kanit, overpass, roboto } = fontFamily;
 export default styled.div`
 background-image: url(${residentsBG});
 height: auto;
-min-height: 90vh;
   .pros__title {
     padding: ${pxToRem(100)} ${pxToRem(50)};
     text-align: center;

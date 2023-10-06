@@ -6,7 +6,6 @@ import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import Sidebar from "components/Sidebar";
 
-
 function App() {
   const [isSidebarOpen, setisSidebarOpen] = useState<boolean>(false);
   isSidebarOpen
@@ -14,16 +13,18 @@ function App() {
     : (document.body.style.overflowY = "auto");
   return (
     <div className="app">
-      <Navbar
-        isSidebarOpen={isSidebarOpen}
-        setIsSidebarOpen={setisSidebarOpen}
-      />  
-      {isSidebarOpen ? (
-        <Sidebar
+      <div className="container__nav">
+        <Navbar
           isSidebarOpen={isSidebarOpen}
           setIsSidebarOpen={setisSidebarOpen}
         />
-      ) : null}
+        {isSidebarOpen ? (
+          <Sidebar
+            isSidebarOpen={isSidebarOpen}
+            setIsSidebarOpen={setisSidebarOpen}
+          />
+        ) : null}
+      </div>
       <Routes>
         {appRoutes.map(({ key, path, Component }) => (
           <Route key={key} path={path} element={<Component />} />
