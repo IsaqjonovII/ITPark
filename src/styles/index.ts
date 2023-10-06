@@ -30,7 +30,7 @@ export default createGlobalStyle`
         position: sticky;
         top: 0;
         left: 0;
-        z-index: 99;
+        z-index: 9999;
     }
     ::selection {
         background-color: ${green}40;
