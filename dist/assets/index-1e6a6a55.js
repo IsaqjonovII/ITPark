@@ -1,7 +1,7 @@
-import{s as h,p as t,l as i,c as u,f as p,j as a,u as x}from"./index-b4e51de9.js";import{r as g}from"./residents-9969fa27.js";import{e as n}from"./courses-c4ec0afe.js";import"./index.esm-d4a8b1af.js";const f="/assets/nodata-a64bb7d3.png",{white:b,lightGray:o,darkGray:j,green:v}=u,{kanit:c}=p,N=h.section`
+import{s as h,p as t,l as i,c as u,f as x,j as a,u as g}from"./index-8066d643.js";import{r as p}from"./residents-9969fa27.js";import{e as n}from"./courses-8eff30a9.js";const f="/assets/nodata-a64bb7d3.png",{white:b,lightGray:o,darkGray:j,green:v}=u,{kanit:c}=x,N=h.section`
     width: 100%;
     height: calc(100vh - 5rem);
-    background-image: url(${g});
+    background-image: url(${p});
     padding: ${t(30)};
 
     .table__wrp {
@@ -82,4 +82,4 @@ import{s as h,p as t,l as i,c as u,f as p,j as a,u as x}from"./index-b4e51de9.js
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-`,y=()=>a.jsx(w,{}),_=()=>{var s,e;const{id:d}=x();return a.jsx(N,{children:(s=n[Number(d)])!=null&&s.courses.length?a.jsxs("div",{className:"table__wrp",children:[a.jsxs("div",{className:"thead",children:[a.jsx("div",{className:"th",children:"No."}),a.jsx("div",{className:"th",children:"Education Center"}),a.jsx("div",{className:"th",children:"Price"}),a.jsx("div",{className:"th",children:"Duration"})]}),a.jsx("div",{className:"tbody",children:(e=n[Number(d)])==null?void 0:e.courses.map(({id:r,name:l,duration:m,price:$})=>a.jsxs("div",{className:"tr",children:[a.jsx("div",{className:"td",children:++r}),a.jsx("div",{className:"td",children:l}),a.jsxs("div",{className:"td",children:[$," so'm"]}),a.jsx("div",{className:"td",children:m.toString()})]},r))})]}):a.jsx(y,{})})};export{_ as default};
+`,y=()=>a.jsx(w,{}),D=()=>{var s,e;const{id:d}=g();return a.jsx(N,{children:(s=n[Number(d)])!=null&&s.courses.length?a.jsxs("div",{className:"table__wrp",children:[a.jsxs("div",{className:"thead",children:[a.jsx("div",{className:"th",children:"No."}),a.jsx("div",{className:"th",children:"Education Center"}),a.jsx("div",{className:"th",children:"Price"}),a.jsx("div",{className:"th",children:"Duration"})]}),a.jsx("div",{className:"tbody",children:(e=n[Number(d)])==null?void 0:e.courses.map(({id:r,name:l,duration:m,price:$})=>a.jsxs("div",{className:"tr",children:[a.jsx("div",{className:"td",children:++r}),a.jsx("div",{className:"td",children:l}),a.jsxs("div",{className:"td",children:[$," so'm"]}),a.jsx("div",{className:"td",children:m.toString()})]},r))})]}):a.jsx(y,{})})};export{D as default};

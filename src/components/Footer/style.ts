@@ -13,6 +13,7 @@ export default styled.footer`
     position: relative;
     z-index: 99;
     border-top: ${pxToRem(1)} solid ${white}10;
+    user-select: none;
     
     .footer__logo{
       ${layout("flex")}
