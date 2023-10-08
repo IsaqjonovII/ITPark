@@ -5,7 +5,6 @@ const Home = lazy(() => import("pages/Home"));
 const News = lazy(() => import("pages/News"));
 const Residents = lazy(() => import("pages/Residents"));
 const Faq = lazy(() => import("pages/FAQ"));
-const Contact = lazy(() => import("pages/Contact"));
 const About = lazy(() => import("pages/About"));
 const Startups = lazy(() => import("pages/Startups"));
 const Education = lazy(() => import("pages/Education"));
@@ -19,7 +18,6 @@ const {
   RESIDENTS,
   NEWS,
   FAQ,
-  CONTACT,
   STARTUPS,
   EDUCATION,
   STARTUP_INFO,
@@ -68,11 +66,7 @@ export const appRoutes: IRoutes[] = [
     path: FAQ,
     Component: Faq,
   },
-  {
-    key: "contact",
-    path: CONTACT,
-    Component: Contact,
-  },
+
   {
     key: "startup__info",
     path: STARTUP_INFO,
