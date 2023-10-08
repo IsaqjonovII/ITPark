@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { appRoutes } from "routes";
-// import Loader from "components/Loader";
+import Loader from "components/Loader";
 import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import Sidebar from "components/Sidebar";
@@ -31,7 +31,7 @@ function App() {
         ))}
       </Routes>
       <Footer />
-      {/* <Loader /> */}
+      <Loader />
     </div>
   );
 }
