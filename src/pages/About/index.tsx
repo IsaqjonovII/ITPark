@@ -40,6 +40,23 @@ const About = () => {
           </p>
         </div>
       </main>
+      <section className="section">
+        <h1 className="section__title">History of creation of IT Park</h1>
+
+        <p className="about__text">
+          During the first visit of the President of the Republic of Uzbekistan
+          Shavkat Mirziyoyev to the Republic of India, which was held from
+          September 30 to October 2, 2018, Uzbek and Indian Parties agreed to
+          expand cooperation in the field of IT. The Uzbek side, together with
+          the information and technology companies of India, expressed interest
+          in creating an Information Technology Park in Uzbekistan on basis of
+          their best practices in software development and accelerating
+          startups. Thus, it can be noted that IT Park was created on the
+          initiative of the President of the Republic of Uzbekistan to improve
+          the startup ecosystem and startup projects and their implementation in
+          our country.
+        </p>
+      </section>
     </StyledAbout>
   );
 };
