@@ -6,7 +6,6 @@ const {
   RESIDENTS,
   NEWS,
   FAQ,
-  CONTACT,
   STARTUPS,
   EDUCATION,
 } = APP_ROUTES;
@@ -42,9 +41,4 @@ export const navRoutes: INavRoutes[] = [
     path: FAQ,
     title: "FAQ",
   },
-  {
-    key: "contact",
-    path: CONTACT,
-    title: "Contact",
-  }
 ];

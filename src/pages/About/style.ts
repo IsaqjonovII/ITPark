@@ -36,6 +36,7 @@ export default styled.div`
             font-size: ${pxToRem(43)};
             font-family: ${kanit};
             line-height: .7;
+            font-weight: 400;
             span {
                 font-size: ${pxToRem(16)};
                 text-transform: uppercase;
@@ -46,7 +47,11 @@ export default styled.div`
         font-size: ${pxToRem(23)};
         font-family: ${kanit};
         margin-bottom: ${pxToRem(20)};
+      text-align: justify;
         line-height: 1.3;
+        span {
+          color: ${green};
+        }
   }
   .section__title {
     font-size: ${pxToRem(45)};
@@ -55,5 +60,54 @@ export default styled.div`
   }
   .section {
     margin: ${pxToRem(30)} 0;
+  }
+  @media screen and (max-width: ${pxToRem(1240)}) {
+    .main {
+
+      .banner__img {
+        margin-right: ${pxToRem(30)};
+      }
+    }
+    .about__text {
+      font-size: ${pxToRem(18)};
+    }
+  }
+  @media screen and (max-width: ${pxToRem(1024)}) {
+    .main {
+      flex-direction: column-reverse;
+      .banner__img {
+        width: 100%;
+      }
+      .logo__wrp {
+        margin: auto;
+        max-width: ${pxToRem(280)};
+        justify-content: center;
+        .logo {
+         
+          max-width: ${pxToRem(80)};
+        }
+        h1 {
+            font-size: ${pxToRem(33)};
+            span {
+                font-size: ${pxToRem(14)};
+                text-transform: uppercase;
+            }
+        }
+      }
+    }
+    .section__title {
+      font-size: ${pxToRem(35)};
+    }
+  }
+  @media screen and (max-width: ${pxToRem(550)}) {
+    padding: ${pxToRem(30)};
+    .main {
+      .about__text {
+        font-size: ${pxToRem(15)};
+      }
+    }
+    .section__title {
+      font-size: ${pxToRem(25)};
+    }
   }
 `;
