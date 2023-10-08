@@ -3,6 +3,7 @@ import notfound from "./notfound.svg";
 import residentsBG from "./residents.svg";
 import logoMP4 from "./itplogo.mp4";
 import logo2 from "./logoITpark.png";
-import contactBG from "./contact.svg";
+import logo from "./logo.png";
+import banner from "./banner.jpg";
 
-export { nodata, notfound, residentsBG, logo2, logoMP4, contactBG };
+export { nodata, notfound, residentsBG, logo2, logoMP4, logo, banner };
