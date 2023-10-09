@@ -93,6 +93,15 @@ export default styled.header`
     display: none;
     color: ${white};
   }
+  .lang__select {
+    width: 200px;
+    option {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
   @media screen and (max-width: ${pxToRem(1150)}) {
     .nav__menu {
 
