@@ -5,6 +5,7 @@ import App from "./App.tsx";
 import GlobalStyles from "styles";
 import Loader from "components/Loader";
 
+import "language"
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/service-worker.js");
 }
