@@ -7,7 +7,7 @@ const { lightGray, lightGreen, white } = colors;
 const { overpass } = fontFamily;
 export default styled.main`
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 5rem);
   display: grid;
   place-items: center;
   padding-bottom: 5rem;

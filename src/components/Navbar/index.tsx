@@ -4,6 +4,7 @@ import { logo2 } from "assets";
 import StyledNav from "./style";
 import { navRoutes } from "routes/navroutes";
 import LazyImage from "components/LazyImage";
+import { useTranslation } from "react-i18next";
 
 export interface INav {
   isSidebarOpen: boolean;
@@ -11,6 +12,13 @@ export interface INav {
 }
 
 const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
+  const { t, i18n } = useTranslation();
+
+  const changeLng = (e: any) => {
+    i18n.changeLanguage(e.target.value ?? "uz");
+  };
+
+  console.log(t("startups"))
   return (
     <StyledNav>
       <nav className="nav__container">
@@ -20,13 +28,20 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
           </div>
         </Link>
         <ul className="nav__menu">
-          {navRoutes.map(({ key, title, path }) => (
+          {navRoutes.map(({ key, path }) => (
             <li className="menu__link" key={key}>
               <Link className="link" to={path}>
-                {title}
+                {t(key)}
               </Link>
             </li>
           ))}
+          <li className="lang">
+            <select className="lang__select" onChange={changeLng}>
+              <option value="uz">O'zbekcha</option>
+              <option value="en">English</option>
+              <option value="ru">Pyccku</option>
+            </select>
+          </li>
         </ul>
         <div className="bars" role="button" aria-expanded={false} tabIndex={0}>
           <Hamburger

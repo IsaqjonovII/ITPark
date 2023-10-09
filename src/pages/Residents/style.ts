@@ -10,9 +10,7 @@ const { kanit, overpass, roboto } = fontFamily;
 
 export default styled.div`
 background-image: url(${residentsBG});
-background-attachment: fixed;
 height: auto;
-min-height: 90vh;
   .pros__title {
     padding: ${pxToRem(100)} ${pxToRem(50)};
     text-align: center;
@@ -49,27 +47,38 @@ min-height: 90vh;
         text-shadow: 0 0 ${pxToRem(3)} ${green};
       }
     }
-  } 
+  }
   .testimonial {
     padding: ${pxToRem(50)};
     .testimonial__cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    max-width: ${pxToRem(1000)};
+      ${layout("grid", { cols: 4, rows: 1 })}
+      margin: auto;
+      grid-gap: ${pxToRem(10)};
       .card {
         padding: ${pxToRem(20)} ${pxToRem(35)};
-        display: grid;
-        place-items: center;
+        ${layout("center")}
+        color: ${white};
         text-align: center;
+        border: ${pxToRem(1)} solid ${green}70;
+        border-radius: ${pxToRem(10)};
+        cursor: pointer;
+        transition:100ms ease;
+        &:hover {
+          background-color: ${green}10;
+          box-shadow: 0 ${pxToRem(2)} 0 ${green};
+          transform: translateY(-${pxToRem(2)});
+          svg {
+            color: ${green};
+          }
+        }
         svg {
-          color: ${white};
-           font-size: calc(${pxToRem(15)} + 3vw);
+          font-size: calc(${pxToRem(10)} + 2vw);
         }
         span {
           font-size: ${pxToRem(22)};
           margin: ${pxToRem(20)} 0 0 0;
           font-family: ${overpass};
-          color: ${green};
         }
       }
     }
@@ -86,6 +95,12 @@ min-height: 90vh;
             }
         }
     }
+    .testimonial {
+      .testimonial__cards {
+        ${layout("grid", { cols: 2, rows: 2 })}
+        max-width: ${pxToRem(1000)};
+      }
+    }
     .pros__title {
         padding: ${pxToRem(50)};
         font-size: ${pxToRem(25)};
@@ -98,11 +113,17 @@ min-height: 90vh;
             padding: 0;
             .text {
                 font-size: ${pxToRem(18)};
+              }
             }
-        }
-        .card:last-child {
-            width: 100%;
-        }
+            /* &:last-child {
+                width: 100%;
+            } */
+    }
+    .testimonial {
+      .testimonial__cards {
+        ${layout("grid", { cols: 1, rows: 4 })}
+        max-width: ${pxToRem(1000)};
+      }
     }
     .pros__title {
         margin-bottom: ${pxToRem(50)};
