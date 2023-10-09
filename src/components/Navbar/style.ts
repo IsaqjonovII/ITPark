@@ -93,9 +93,21 @@ export default styled.header`
     display: none;
     color: ${white};
   }
+  .lang__select {
+    border: ${pxToRem(1) };
+    padding: ${pxToRem(8)} ${pxToRem(15)};
+    font-size: ${pxToRem(17)};
+    font-family: ${kanit};
+    background-color: transparent;
+    color: ${lightGreen};
+    outline: #30d70f;
+    option {
+      border: none;
+      background-color: ${gray};
+    }
+  }
   @media screen and (max-width: ${pxToRem(1150)}) {
     .nav__menu {
-
       .menu__link {
         margin: 0 ${pxToRem(10)};
       }

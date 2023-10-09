@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import StyledCourseInfo from "./style";
 import NoData from "components/NoData";
 import { eduCentersData } from "static/courses";
+import { useTranslation } from "react-i18next";
 
 type paramsId = {
   id: string;
@@ -9,7 +10,7 @@ type paramsId = {
 
 const CourseInfo = () => {
   const { id } = useParams<paramsId>();
-
+  const {t} = useTranslation();
   return (
     <StyledCourseInfo>
       {!eduCentersData[Number(id)]?.courses.length ? (
@@ -18,9 +19,9 @@ const CourseInfo = () => {
         <div className="table__wrp">
           <div className="thead">
             <div className="th">No.</div>
-            <div className="th">Education Center</div>
-            <div className="th">Price</div>
-            <div className="th">Duration</div>
+            <div className="th">{t("edu_center")}</div>
+            <div className="th">{t("edu_price")}</div>
+            <div className="th">{t("edu_duration")}</div>
           </div>
 
           <div className="tbody">

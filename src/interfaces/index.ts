@@ -7,11 +7,6 @@ export interface IStartupData {
   type: string;
   Icon?: ReactElement | JSX.Element | any;
 }
-export interface IStartupTypes {
-  id: string | number;
-  title: string;
-  type: string;
-}
 export interface ICourseTypes {
   id: number;
   name: string;

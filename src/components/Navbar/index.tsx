@@ -17,8 +17,6 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
   const changeLng = (e: any) => {
     i18n.changeLanguage(e.target.value ?? "uz");
   };
-
-  console.log(t("startups"))
   return (
     <StyledNav>
       <nav className="nav__container">
@@ -37,9 +35,9 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
           ))}
           <li className="lang">
             <select className="lang__select" onChange={changeLng}>
-              <option value="uz">O'zbekcha</option>
-              <option value="en">English</option>
-              <option value="ru">Pyccku</option>
+              <option value="uz">O'zb</option>
+              <option value="en">Eng</option>
+              <option value="ru">O'ris</option>
             </select>
           </li>
         </ul>
