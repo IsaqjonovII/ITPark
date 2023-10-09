@@ -6,37 +6,34 @@ import {
   FaListCheck,
   FaRegPenToSquare,
 } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 const Residents = () => {
   useEffect(() => {
     document.title = "ITPARK - Residents";
   }, []);
+  const {t} = useTranslation();
   return (
     <StyledResidents>
       <section className="pros">
-        <h3 className="pros__title">
-          Residents of IT Park are IT companies and IT training centers, which
-          can receive a number of significant advantages. These include:
-        </h3>
+        <h3 className="pros__title">{t("residents_title")}</h3>
 
         <div className="pros__cards">
           <div className="card">
             <span className="indicator">7.5%</span>
-            <p className="text">Income tax</p>
+            <p className="text">{t("in_tax")}</p>
           </div>
           <div className="card">
             <span className="indicator">0%</span>
-            <p className="text">Corporate tax</p>
+            <p className="text">{t("cp_tax")}</p>
           </div>
           <div className="card">
             <span className="indicator">0%</span>
-            <p className="text">Unified Social Payments</p>
+            <p className="text">{t("usp_taxt")}</p>
           </div>
           <div className="card">
             <span className="indicator">0%</span>
-            <p className="text">
-              Custom payments when <br /> importing goods for <br /> own needs
-            </p>
+            <p className="text">{t("imp_tax")}</p>
           </div>
         </div>
       </section>
@@ -44,19 +41,19 @@ const Residents = () => {
         <div className="testimonial__cards">
           <div className="card">
             <FaRegPenToSquare />
-            <span>Residency Clause</span>
+            <span>{t("resident_clause")}</span>
           </div>
           <div className="card">
             <FaBuildingUser />
-            <span>Become Resident</span>
+            <span>{t("resident_member")}</span>
           </div>
           <div className="card">
             <FaListCheck />
-            <span>Requirements</span>
+            <span>{t("resident_req")}</span>
           </div>
           <div className="card">
             <FaBuilding />
-            <span>Rent Office</span>
+            <span>{t("resident_rent")}</span>
           </div>
         </div>
       </section>

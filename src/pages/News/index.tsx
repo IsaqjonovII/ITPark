@@ -4,8 +4,10 @@ import StyledNews from "./style";
 import { newsData } from "static";
 import { INews } from "interfaces";
 import LazyImage from "components/LazyImage";
+import { useTranslation } from "react-i18next";
 
 const News = () => {
+  const {t} = useTranslation();
   const [query, setQuery] = useState<string>("");
   const filteredNews: INews[] = useMemo(() => {
     return newsData.filter((news) => {
@@ -19,7 +21,7 @@ const News = () => {
   return (
     <StyledNews>
       <header className="news__header">
-        <h1 className="news__title">News</h1>
+        <h1 className="news__title">{t("news")}</h1>
         <div className="search__wrp">
           <input
             type="search"
@@ -28,7 +30,7 @@ const News = () => {
             onChange={({ target }) => setQuery(target.value)}
             required
             minLength={4}
-            placeholder="Search news..."
+            placeholder={t("news_inp")}
           />
           <button
             type="submit"

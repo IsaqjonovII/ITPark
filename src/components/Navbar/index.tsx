@@ -17,8 +17,6 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
   const changeLng = (e: any) => {
     i18n.changeLanguage(e.target.value ?? "uz");
   };
-
-  console.log(t("startups"))
   return (
     <StyledNav>
       <nav className="nav__container">

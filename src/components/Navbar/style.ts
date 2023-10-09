@@ -94,17 +94,20 @@ export default styled.header`
     color: ${white};
   }
   .lang__select {
-    width: 200px;
+    border: ${pxToRem(1) };
+    padding: ${pxToRem(8)} ${pxToRem(15)};
+    font-size: ${pxToRem(17)};
+    font-family: ${kanit};
+    background-color: transparent;
+    color: ${lightGreen};
+    outline: #30d70f;
     option {
-      img {
-        width: 80px;
-        height: 80px;
-      }
+      border: none;
+      background-color: ${gray};
     }
   }
   @media screen and (max-width: ${pxToRem(1150)}) {
     .nav__menu {
-
       .menu__link {
         margin: 0 ${pxToRem(10)};
       }

@@ -4,18 +4,20 @@ import { HiArrowUpRight } from "react-icons/hi2";
 import APP_ROUTES from "constants";
 import StyledEducation from "./style";
 import { generateCourseTypes } from "static/courses";
+import { useTranslation } from "react-i18next";
 
 const { EDUCATION } = APP_ROUTES;
 
 
 const Education = () => {
+  const {t} = useTranslation();
   useEffect(() => {
     document.title = "ITPARK - Education";
   }, []);
   return (
     <StyledEducation>
       <div className="container">
-        <h1 className="edu__title">IT Education</h1>
+        <h1 className="edu__title">{t("it_edu")}</h1>
         <br />
 
         <div className="courses">
@@ -26,7 +28,7 @@ const Education = () => {
               className="course__card"
             >
               <div className="card__wrp">
-                <p className="course__title">{name}</p>
+                <p className="course__title">{t(name)}</p>
 
                 <div className="course__icons">
                   <Icon className="course__icon" />
