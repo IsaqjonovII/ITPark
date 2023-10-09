@@ -1,10 +1,14 @@
 # IT Park Tashkent Region
 
+
 Welcome to the dynamic world of the Tashkent Region Branch of IT Park! 🚀
 
 ## About IT Park
 
 On July 24, 2019, history was made with the inauguration of the Republic of Uzbekistan's first IT Park in Tashkent. In an astonishingly short time, IT Park has sown the seeds of innovation, birthing 28 startups and a multitude of cutting-edge projects in the realm of information technology. Complementing these achievements are a series of empowering training sessions, workshops, and gatherings, all geared towards nurturing the curiosity and digital prowess of our nation's youth.
+
+<br />
+<br />
 
 ## What We Offer
 

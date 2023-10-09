@@ -77,6 +77,7 @@ export default styled.div`
       flex-direction: column-reverse;
       .banner__img {
         width: 100%;
+        margin-right: 0;
       }
       .logo__wrp {
         margin: auto;
