@@ -28,7 +28,7 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
           </div>
         </Link>
         <ul className="nav__menu">
-          {navRoutes.map(({ key, title, path }) => (
+          {navRoutes.map(({ key, path }) => (
             <li className="menu__link" key={key}>
               <Link className="link" to={path}>
                 {t(key)}
