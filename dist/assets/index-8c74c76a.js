@@ -1,14 +1,14 @@
-import{G as l,s as u,p as e,l as r,o as m,c as $,f as _,r as p,j as s,g,A as h}from"./index-8066d643.js";import{g as x}from"./courses-8eff30a9.js";function f(o){return l({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.03 20.03a.75.75 0 01-1.06-1.06L17.69 5.25H8.25a.75.75 0 010-1.5z",clipRule:"evenodd"}}]})(o)}const{xl:w}=m,{green:a,white:i,lightGreen:t}=$,{kanit:j,overpass:v}=_,b=u.section`
+import{G as u,s as m,p as e,l as r,o as _,c as $,f as p,u as g,r as h,j as s,g as x,A as f}from"./index-daa35007.js";import{g as w}from"./courses-225d089d.js";function j(o){return u({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"currentColor","aria-hidden":"true"},child:[{tag:"path",attr:{fillRule:"evenodd",d:"M8.25 3.75H19.5a.75.75 0 01.75.75v11.25a.75.75 0 01-1.5 0V6.31L5.03 20.03a.75.75 0 01-1.06-1.06L17.69 5.25H8.25a.75.75 0 010-1.5z",clipRule:"evenodd"}}]})(o)}const{xl:v}=_,{green:i,white:t,lightGreen:n}=$,{kanit:b,overpass:N}=p,y=m.section`
 .container {
   margin: 0 auto;
   max-width: ${e(1550)};
   padding: ${e(30)};
 }
   .edu__title {
-    font-size: ${w};
+    font-size: ${v};
     text-align: center;
-    color: ${i};
-    font-family: ${v};
+    color: ${t};
+    font-family: ${N};
     margin: ${e(20)} 0;
   }
   .courses {
@@ -16,8 +16,8 @@ import{G as l,s as u,p as e,l as r,o as m,c as $,f as _,r as p,j as s,g,A as h}f
     grid-gap: 20px;
   }
   .course__card {
-    color: ${i};
-    font-family: ${j};
+    color: ${t};
+    font-family: ${b};
     overflow: hidden;
     padding: ${e(20)};
     border-inline-start: ${e(1)} solid;
@@ -25,7 +25,7 @@ import{G as l,s as u,p as e,l as r,o as m,c as $,f as _,r as p,j as s,g,A as h}f
     border: ${e(1)} solid transparent;
     border-image-source: radial-gradient(
       circle at top left,
-      ${t},
+      ${n},
       transparent 30%
       );
       border-image-slice: 1;
@@ -43,10 +43,10 @@ import{G as l,s as u,p as e,l as r,o as m,c as $,f as _,r as p,j as s,g,A as h}f
       border-image-source: radial-gradient(
         circle at bottom left,
         transparent 30%,
-        ${t}
+        ${n}
       );
       .course__icons {
-        color: ${a};
+        color: ${i};
       }
     }
   }
@@ -55,7 +55,7 @@ import{G as l,s as u,p as e,l as r,o as m,c as $,f as _,r as p,j as s,g,A as h}f
     ${r("flex")}
     padding: 0 ${e(20)};
       transition: 300ms ease-in-out;
-    color: ${a}70;
+    color: ${i}70;
     height: 50%;
     font-size: ${e(55)};  
   }
@@ -95,4 +95,4 @@ import{G as l,s as u,p as e,l as r,o as m,c as $,f as _,r as p,j as s,g,A as h}f
       ${r("grid",{cols:1,rows:8,rowsH:e(200)})}
     }
   }
-`,{EDUCATION:N}=h,z=()=>(p.useEffect(()=>{document.title="ITPARK - Education"},[]),s.jsx(b,{children:s.jsxs("div",{className:"container",children:[s.jsx("h1",{className:"edu__title",children:"IT Education"}),s.jsx("br",{}),s.jsx("div",{className:"courses",children:x().map(({id:o,name:n,description:c,Icon:d})=>s.jsx(g,{to:`${N}/courses/${o}`,className:"course__card",children:s.jsxs("div",{className:"card__wrp",children:[s.jsx("p",{className:"course__title",children:n}),s.jsxs("div",{className:"course__icons",children:[s.jsx(d,{className:"course__icon"}),s.jsx(f,{className:"arrow__icon"})]}),s.jsx("div",{className:"overlay",children:s.jsx("p",{children:c})})]})},o))})]})}));export{z as default};
+`,{EDUCATION:z}=f,R=()=>{const{t:o}=g();return h.useEffect(()=>{document.title="ITPARK - Education"},[]),s.jsx(y,{children:s.jsxs("div",{className:"container",children:[s.jsx("h1",{className:"edu__title",children:o("it_edu")}),s.jsx("br",{}),s.jsx("div",{className:"courses",children:w().map(({id:a,name:c,description:d,Icon:l})=>s.jsx(x,{to:`${z}/courses/${a}`,className:"course__card",children:s.jsxs("div",{className:"card__wrp",children:[s.jsx("p",{className:"course__title",children:o(c)}),s.jsxs("div",{className:"course__icons",children:[s.jsx(l,{className:"course__icon"}),s.jsx(j,{className:"arrow__icon"})]}),s.jsx("div",{className:"overlay",children:s.jsx("p",{children:d})})]})},a))})]})})};export{R as default};

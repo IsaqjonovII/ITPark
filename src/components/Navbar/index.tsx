@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Spiral as Hamburger } from "hamburger-react";
-import { logo2 } from "assets";
+import { logo } from "assets";
 import StyledNav from "./style";
 import { navRoutes } from "routes/navroutes";
 import LazyImage from "components/LazyImage";
@@ -21,8 +21,11 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
     <StyledNav>
       <nav className="nav__container">
         <Link to="/" role="link">
-          <div className="nav__logo">
-            <LazyImage className="logo__img" src={logo2} alt="IT park logo" />
+          <div className="logo__wrp">
+            <LazyImage className="logo" src={logo} alt="IT Park logo" />
+            <h1>
+              IT Park <br /> <span>Tashkent region</span>{" "}
+            </h1>
           </div>
         </Link>
         <ul className="nav__menu">
@@ -33,19 +36,38 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
               </Link>
             </li>
           ))}
-          <li className="lang">
-            <select className="lang__select" onChange={changeLng}>
-              <option value="uz">O'zb</option>
-              <option value="en">Eng</option>
-              <option value="ru">O'ris</option>
-            </select>
-          </li>
+          <select
+            className="lang__select"
+            onChange={changeLng}
+            aria-label="Select Language"
+          >
+            <option value="uz">O'zb</option>
+            <option value="en">Eng</option>
+            <option value="ru">Рус</option>
+          </select>
         </ul>
-        <div className="bars" role="button" aria-expanded={false} tabIndex={0}>
-          <Hamburger
-            toggle={() => setIsSidebarOpen(!isSidebarOpen)}
-            toggled={isSidebarOpen}
-          />
+
+        <div className="nav__right">
+          <select
+            className="lang__select"
+            onChange={changeLng}
+            aria-label="Select Language"
+          >
+            <option value="uz">O'zb</option>
+            <option value="en">Eng</option>
+            <option value="ru">Рус</option>
+          </select>
+          <div
+            className="bars"
+            role="button"
+            aria-expanded={false}
+            tabIndex={0}
+          >
+            <Hamburger
+              toggle={() => setIsSidebarOpen(!isSidebarOpen)}
+              toggled={isSidebarOpen}
+            />
+          </div>
         </div>
       </nav>
     </StyledNav>

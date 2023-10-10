@@ -9,7 +9,7 @@ export default styled.div`
     width: 100%;
     height: 100vh;
     background-color: ${darkGray};
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: grid;

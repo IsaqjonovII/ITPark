@@ -1,7 +1,7 @@
-import{s as h,p as t,l as i,c as u,f as x,j as a,u as g}from"./index-8066d643.js";import{r as p}from"./residents-9969fa27.js";import{e as n}from"./courses-8eff30a9.js";const f="/assets/nodata-a64bb7d3.png",{white:b,lightGray:o,darkGray:j,green:v}=u,{kanit:c}=x,N=h.section`
+import{s as l,p as t,l as i,c as p,f as x,j as a,q as g,u as f}from"./index-daa35007.js";import{r as b}from"./residents-9969fa27.js";import{e as o}from"./courses-225d089d.js";const j="/assets/nodata-a64bb7d3.png",{white:v,lightGray:c,darkGray:N,green:w}=p,{kanit:h}=x,y=l.section`
     width: 100%;
     height: calc(100vh - 5rem);
-    background-image: url(${p});
+    background-image: url(${b});
     padding: ${t(30)};
 
     .table__wrp {
@@ -10,15 +10,15 @@ import{s as h,p as t,l as i,c as u,f as x,j as a,u as g}from"./index-8066d643.js
         height: auto;
         padding:  ${t(20)};
         margin: 0 auto;
-        border: ${t(1)} solid ${o};
+        border: ${t(1)} solid ${c};
         border-radius: ${t(6)};
-        background-color: ${j}c5;
+        background-color: ${N}c5;
     }
     .thead {
         ${i("flex")}
-        font-family: ${c};
+        font-family: ${h};
         font-size: ${t(20)};
-        color: ${v};
+        color: ${w};
         .th {
             padding: ${t(10)} ${t(20)};
             cursor: pointer;
@@ -29,21 +29,21 @@ import{s as h,p as t,l as i,c as u,f as x,j as a,u as g}from"./index-8066d643.js
         }
     }
     .tbody {
-        color: ${b};
+        color: ${v};
         .tr {
             ${i("flex")}
             margin: ${t(10)} 0;
             border-radius: ${t(4)};
             transition: 300ms ease-out;
             &:hover {
-                background-color: ${o};
+                background-color: ${c};
                 cursor: pointer;
             }
             .td {
                 text-align: left !important;
                 padding: ${t(10)} ${t(20)};
                 width: 100%;
-                font-family: ${c};
+                font-family: ${h};
                 font-size: ${t(22)};
                 &:first-child {
                     max-width: ${t(120)};
@@ -74,12 +74,12 @@ import{s as h,p as t,l as i,c as u,f as x,j as a,u as g}from"./index-8066d643.js
     @media screen and (max-width: ${t(550)}) {
         padding: ${t(20)};
     }
-`,w=h.div`
+`,k=l.div`
   width: 100%;
   height: calc(100vh - 8rem);
   ${i("center")}
-  background-image: url(${f});
+  background-image: url(${j});
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-`,y=()=>a.jsx(w,{}),D=()=>{var s,e;const{id:d}=g();return a.jsx(N,{children:(s=n[Number(d)])!=null&&s.courses.length?a.jsxs("div",{className:"table__wrp",children:[a.jsxs("div",{className:"thead",children:[a.jsx("div",{className:"th",children:"No."}),a.jsx("div",{className:"th",children:"Education Center"}),a.jsx("div",{className:"th",children:"Price"}),a.jsx("div",{className:"th",children:"Duration"})]}),a.jsx("div",{className:"tbody",children:(e=n[Number(d)])==null?void 0:e.courses.map(({id:r,name:l,duration:m,price:$})=>a.jsxs("div",{className:"tr",children:[a.jsx("div",{className:"td",children:++r}),a.jsx("div",{className:"td",children:l}),a.jsxs("div",{className:"td",children:[$," so'm"]}),a.jsx("div",{className:"td",children:m.toString()})]},r))})]}):a.jsx(y,{})})};export{D as default};
+`,_=()=>a.jsx(k,{}),G=()=>{var e,r;const{id:s}=g(),{t:d}=f();return a.jsx(y,{children:(e=o[Number(s)])!=null&&e.courses.length?a.jsxs("div",{className:"table__wrp",children:[a.jsxs("div",{className:"thead",children:[a.jsx("div",{className:"th",children:"No."}),a.jsx("div",{className:"th",children:d("edu_center")}),a.jsx("div",{className:"th",children:d("edu_price")}),a.jsx("div",{className:"th",children:d("edu_duration")})]}),a.jsx("div",{className:"tbody",children:(r=o[Number(s)])==null?void 0:r.courses.map(({id:n,name:m,duration:$,price:u})=>a.jsxs("div",{className:"tr",children:[a.jsx("div",{className:"td",children:++n}),a.jsx("div",{className:"td",children:m}),a.jsxs("div",{className:"td",children:[u," so'm"]}),a.jsx("div",{className:"td",children:$.toString()})]},n))})]}):a.jsx(_,{})})};export{G as default};

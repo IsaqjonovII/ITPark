@@ -5,7 +5,7 @@ import App from "./App.tsx";
 import GlobalStyles from "styles";
 import Loader from "components/Loader";
 
-import "language"
+import "language";
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/service-worker.js");
 }
@@ -13,7 +13,7 @@ if ("serviceWorker" in navigator) {
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <GlobalStyles />
-    <Suspense fallback={<Loader />}>
+    <Suspense fallback={<Loader isLoading={true} setIsLoading={() => false} />}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
