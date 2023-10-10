@@ -1,4 +1,4 @@
-import{s as d,p as t,l as a,c as l,f as $,j as s,g as p,A as g,r as m}from"./index-8066d643.js";import{s as _}from"./index-277f4278.js";const{white:e,green:o,lightGray:u}=l,{overpass:i}=$,f=d.section`
+import{s as l,p as t,l as a,c as $,f as p,u as g,j as s,g as _,A as m,r as u,t as f}from"./index-deecd7ee.js";import{s as x}from"./index-e5a4a259.js";const{white:e,green:o,lightGray:h}=$,{overpass:i}=p,w=l.section`
   font-family: ${i};
   padding: ${t(50)};
   .startup__title {
@@ -22,7 +22,7 @@ import{s as d,p as t,l as a,c as l,f as $,j as s,g as p,A as g,r as m}from"./ind
     display: grid;
     ${a("center")}
     font-size: ${t(20)};
-    border: ${t(1)} solid ${u};
+    border: ${t(1)} solid ${h};
     border-radius: ${t(10)};
     padding: ${t(10)};
     transition: 200ms ease-in-out;
@@ -63,4 +63,4 @@ import{s as d,p as t,l as a,c as l,f as $,j as s,g as p,A as g,r as m}from"./ind
     font-size: ${t(25)};
   }
   }
-`,{STARTUPS:x}=g,h=({id:r,name:n,Icon:c})=>s.jsx(s.Fragment,{children:s.jsxs(p,{to:`${x}/${r}`,className:"category__card",children:[s.jsx(c,{}),s.jsx("p",{children:n})]},r)}),y=()=>(m.useEffect(()=>{document.title="ITPARK - Startups"},[]),s.jsx(f,{children:s.jsxs("div",{className:"startup__categories",children:[s.jsx("h1",{className:"startup__title",children:"Startups Directions"}),s.jsx("div",{className:"categories__wrp",children:_.map(r=>s.jsx(h,{...r},r.id))})]})}));export{y as default};
+`,{STARTUPS:j}=m,y=({id:r,Icon:n,type:c})=>{const{t:d}=g();return s.jsx(s.Fragment,{children:s.jsxs(_,{to:`${j}/${r}`,className:"category__card",children:[s.jsx(n,{}),s.jsx("p",{children:d(c)})]},r)})},v=()=>(u.useEffect(()=>{document.title="ITPARK - Startups"},[]),s.jsx(w,{children:s.jsxs("div",{className:"startup__categories",children:[s.jsx("h1",{className:"startup__title",children:f("s_directions")}),s.jsx("div",{className:"categories__wrp",children:x.map(r=>s.jsx(y,{...r},r.id))})]})}));export{v as default};

@@ -1,10 +1,10 @@
-import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./index-8066d643.js";import{n as c}from"./index-277f4278.js";function x(a){return $({tag:"svg",attr:{fill:"currentColor",viewBox:"0 0 16 16"},child:[{tag:"path",attr:{d:"M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"}}]})(a)}const{kanit:f,overpass:b}=u,{white:t,green:n}=g,j=m.div`
+import{G as m,s as u,p as e,l as t,f as g,c as p,u as x,r as c,j as r,L as f}from"./index-deecd7ee.js";import{n as l}from"./index-e5a4a259.js";function b(n){return m({tag:"svg",attr:{fill:"currentColor",viewBox:"0 0 16 16"},child:[{tag:"path",attr:{d:"M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"}}]})(n)}const{kanit:j,overpass:v}=g,{white:s,green:i}=p,y=u.div`
   padding: ${e(40)} ${e(80)};
   max-width: ${e(1550)};
   margin: auto;
   .news__header,
   .search__wrp {
-    ${o("flex")}
+    ${t("flex")}
   }
   .news__header {
     margin-bottom: ${e(40)};
@@ -12,7 +12,7 @@ import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./ind
       width: 100%;
       max-width: ${e(1050)};
       height: ${e(50)};
-      background-color: ${t}20;
+      background-color: ${s}20;
       border-radius: ${e(6)};
       .search__inp {
         width: 100%;
@@ -22,9 +22,9 @@ import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./ind
         outline: none;
         font-size: ${e(20)};
         padding: 0 ${e(15)};
-        color: ${t};
+        color: ${s};
         &:focus {
-          border: ${e(2)} solid ${n}70;
+          border: ${e(2)} solid ${i}70;
         }
       }
       button {
@@ -35,16 +35,16 @@ import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./ind
         display: grid;
         place-items: center;
         border-radius: 0 ${e(6)} ${e(6)} 0;
-        background-color: ${n}70;
-        color: ${t};
+        background-color: ${i}70;
+        color: ${s};
         cursor: pointer;
       }
     }
   }
   .news__title {
     font-size: ${e(45)};
-    font-family: ${b};
-    color: ${t};
+    font-family: ${v};
+    color: ${s};
     margin-right: ${e(40)};
   }
   .news__cards__wrp {
@@ -52,16 +52,16 @@ import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./ind
     max-width: ${e(1550)};
     height: auto;
     margin: auto;
-    ${o("grid",{cols:3,rows:"auto"})}
+    ${t("grid",{cols:3,rows:"auto"})}
     grid-gap: ${e(20)};
     .news__card {
       padding: ${e(20)};
       border-radius: ${e(10)};
-      border: ${e(1)} solid ${n};
+      border: ${e(1)} solid ${i};
       cursor: pointer;
       &:hover {
         h1 {
-            color: ${n};
+            color: ${i};
         }
       }
       .card__img {
@@ -70,11 +70,11 @@ import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./ind
         object-fit: cover;
       }
       .card__content {
-        color: ${t};
-        font-family: ${f};
+        color: ${s};
+        font-family: ${j};
         margin-bottom: ${e(20)};
         h2 {
-        color: ${t}80;
+        color: ${s}80;
         font-weight: 300;
         font-size: ${e(20)};
         }
@@ -84,7 +84,7 @@ import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./ind
 
   @media screen and (max-width: ${e(1100)}) {
     .news__cards__wrp {
-        ${o("grid",{cols:2,rows:"auto"})}
+        ${t("grid",{cols:2,rows:"auto"})}
     }
     .news__title {
         font-size: ${e(35)};
@@ -103,7 +103,7 @@ import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./ind
   }
   @media screen and (max-width: ${e(500)}) {
     .news__header {
-        ${o("center")}
+        ${t("center")}
         .search__wrp {
             width: 100%;
         }
@@ -114,7 +114,7 @@ import{G as $,s as m,p as e,l as o,f as u,c as g,r as d,j as r,L as p}from"./ind
         margin-bottom: ${e(20)};
     }
     .news__cards__wrp {
-        ${o("grid",{cols:1,rows:"auto"})}
+        ${t("grid",{cols:1,rows:"auto"})}
     }
 }
-`,y=()=>{const[a,l]=d.useState(""),_=d.useMemo(()=>c.filter(s=>s.title.toLowerCase().includes(a.toLowerCase())||s.subtitle.toLowerCase().includes(a.toLowerCase())),[a,c]);return r.jsxs(j,{children:[r.jsxs("header",{className:"news__header",children:[r.jsx("h1",{className:"news__title",children:"News"}),r.jsxs("div",{className:"search__wrp",children:[r.jsx("input",{type:"search",className:"search__inp",value:a,onChange:({target:s})=>l(s.value),required:!0,minLength:4,placeholder:"Search news..."}),r.jsx("button",{type:"submit",role:"button",tabIndex:0,"aria-expanded":!1,"aria-label":"Search",children:r.jsx(x,{})})]})]}),r.jsx("main",{className:"news__cards__wrp",role:"main",children:_.map(({id:s,title:i,subtitle:h,img:w})=>r.jsxs("div",{className:"news__card",children:[r.jsxs("div",{className:"card__content",children:[r.jsx("h1",{children:i}),r.jsx("h2",{children:h})]}),r.jsx(p,{className:"card__img",src:w,alt:`Image of ${i}`})]},s))})]})};export{y as default};
+`,L=()=>{const{t:n}=x(),[o,_]=c.useState(""),h=c.useMemo(()=>l.filter(a=>a.title.toLowerCase().includes(o.toLowerCase())||a.subtitle.toLowerCase().includes(o.toLowerCase())),[o,l]);return r.jsxs(y,{children:[r.jsxs("header",{className:"news__header",children:[r.jsx("h1",{className:"news__title",children:n("news")}),r.jsxs("div",{className:"search__wrp",children:[r.jsx("input",{type:"search",className:"search__inp",value:o,onChange:({target:a})=>_(a.value),required:!0,minLength:4,placeholder:n("news_inp")}),r.jsx("button",{type:"submit",role:"button",tabIndex:0,"aria-expanded":!1,"aria-label":"Search",children:r.jsx(b,{})})]})]}),r.jsx("main",{className:"news__cards__wrp",role:"main",children:h.map(({id:a,title:d,subtitle:w,img:$})=>r.jsxs("div",{className:"news__card",children:[r.jsxs("div",{className:"card__content",children:[r.jsx("h1",{children:d}),r.jsx("h2",{children:w})]}),r.jsx(f,{className:"card__img",src:$,alt:`Image of ${d}`})]},a))})]})};export{L as default};

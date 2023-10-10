@@ -1,4 +1,4 @@
-import{s as t,j as o}from"./index-8066d643.js";const n="/assets/notfound-dd9d0ddf.svg",e=t.div`
+import{s as t,j as o}from"./index-deecd7ee.js";const n="/assets/notfound-dd9d0ddf.svg",e=t.div`
   width: 100%;
   height: calc(100vh - 5rem);
   background-image: url(${n});
