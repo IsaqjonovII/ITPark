@@ -1,4 +1,4 @@
-import{s as d,p as s,l as i,c,f as o,r as l,u as m,j as a,F as x,a as $,b as h,d as p}from"./index-deecd7ee.js";import{r as g}from"./residents-9969fa27.js";const{white:r,green:t}=c,{kanit:_,overpass:n,roboto:j}=o,f=d.div`
+import{s as d,p as s,l as i,c,f as o,r as l,u as m,j as a,F as x,a as $,b as h,d as p}from"./index-daa35007.js";import{r as g}from"./residents-9969fa27.js";const{white:r,green:t}=c,{kanit:_,overpass:n,roboto:j}=o,f=d.div`
 background-image: url(${g});
 height: auto;
   .pros__title {

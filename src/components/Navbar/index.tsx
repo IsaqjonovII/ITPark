@@ -36,7 +36,11 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
               </Link>
             </li>
           ))}
-          <select className="lang__select" onChange={changeLng}>
+          <select
+            className="lang__select"
+            onChange={changeLng}
+            aria-label="Select Language"
+          >
             <option value="uz">O'zb</option>
             <option value="en">Eng</option>
             <option value="ru">Рус</option>
@@ -44,7 +48,11 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }: INav) => {
         </ul>
 
         <div className="nav__right">
-          <select className="lang__select" onChange={changeLng}>
+          <select
+            className="lang__select"
+            onChange={changeLng}
+            aria-label="Select Language"
+          >
             <option value="uz">O'zb</option>
             <option value="en">Eng</option>
             <option value="ru">Рус</option>
