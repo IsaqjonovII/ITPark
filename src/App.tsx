@@ -8,6 +8,7 @@ import Sidebar from "components/Sidebar";
 
 function App() {
   const [isSidebarOpen, setisSidebarOpen] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -15,6 +16,12 @@ function App() {
       ? (document.body.style.overflowY = "hidden")
       : (document.body.style.overflowY = "auto");
   }, [isSidebarOpen]);
+  useEffect(() => {
+    isLoading
+      ? (document.body.style.overflowY = "hidden")
+      : (document.body.style.overflowY = "auto");
+  }, [isLoading]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -39,7 +46,7 @@ function App() {
         ))}
       </Routes>
       <Footer />
-      <Loader />
+      <Loader isLoading={isLoading} setIsLoading={setIsLoading} />
     </div>
   );
 }

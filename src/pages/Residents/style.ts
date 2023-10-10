@@ -87,7 +87,8 @@ height: auto;
     .pros__cards {
         ${layout("grid", { cols: 2, rows: 2 })}
         .card:last-child {
-            width: 100%;
+            max-width: 80%;
+            margin: auto;
         }
         .card {
             .text {
@@ -115,14 +116,20 @@ height: auto;
                 font-size: ${pxToRem(18)};
               }
             }
-            /* &:last-child {
-                width: 100%;
-            } */
     }
     .testimonial {
       .testimonial__cards {
         ${layout("grid", { cols: 1, rows: 4 })}
         max-width: ${pxToRem(1000)};
+
+        .card {
+          svg {
+            font-size: ${pxToRem(35)};
+          }
+          span {
+            font-size: ${pxToRem(19)};
+          }
+        }
       }
     }
     .pros__title {
