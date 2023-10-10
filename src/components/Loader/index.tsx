@@ -1,9 +1,12 @@
-import { useState } from "react";
+import React from "react";
 import { logoMP4 } from "assets";
 import StyledLoader from "./style";
 
-const Loader = () => {
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+type TLoader = {
+  isLoading: boolean;
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const Loader = ({ isLoading, setIsLoading }: TLoader) => {
   return (
     <StyledLoader>
       <div className={`loader ${isLoading ? "loading" : "not__loading"}`}>

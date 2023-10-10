@@ -11,7 +11,7 @@ const Startups = () => {
   return (
     <StyledStartups>
       <div className="startup__categories">
-        <h1 className="startup__title">{t("startup_directions")}</h1>
+        <h1 className="startup__title">{t("s_directions")}</h1>
         <div className="categories__wrp">
           {startups_data.map((data) => (
             <IconCard key={data.id} {...data} />

@@ -26,31 +26,29 @@ export default styled.header`
     ${layout("flex")}
     margin: 0 auto;
   }
-  color: #30d70f;
 
-  .nav__logo {
-    width: 100%;
-    height: 100%;
-    max-width: ${pxToRem(215)};
-    padding: 0 ${pxToRem(8)};
-    user-select: none;
-    ${layout("flex")}
-    .logo__img {
-      width: 100%;
-      max-width: ${pxToRem(200)};
-      height: 100%;
-      object-fit: cover;
+  .logo__wrp {
+      ${layout("flex")}
+      max-width: ${pxToRem(350)};
+      justify-content: start;
+      color: ${white};
+      max-height: 5rem;
+      .logo {
+          width: 100%;
+          max-width: ${pxToRem(70)};
+          margin-right: ${pxToRem(10)};
+        }
+        h1 {
+            font-size: ${pxToRem(33)};
+            font-family: ${kanit};
+            line-height: .7;
+            font-weight: 400;
+            span {
+                font-size: ${pxToRem(13)};
+                text-transform: uppercase;
+            }
+        }
     }
-    &:hover {
-      cursor: pointer;
-      .logo__img {
-        filter: drop-shadow(0 ${pxToRem(0)} ${pxToRem(10)} ${white}40);
-      }
-      .logo__text {
-        text-shadow: 0 ${pxToRem(2)} ${pxToRem(50)} ${white};
-      }
-    }
-  }
   .nav__menu {
     ${layout("flex")}
     font-family: ${kanit};
@@ -89,12 +87,8 @@ export default styled.header`
       }
     }
   }
-  .bars {
-    display: none;
-    color: ${white};
-  }
   .lang__select {
-    border: ${pxToRem(1) };
+    border: ${pxToRem(1)};
     padding: ${pxToRem(8)} ${pxToRem(15)};
     font-size: ${pxToRem(17)};
     font-family: ${kanit};
@@ -105,6 +99,10 @@ export default styled.header`
       border: none;
       background-color: ${gray};
     }
+    margin-right: ${pxToRem(20)};
+  }
+  .nav__right {
+    display: none;
   }
   @media screen and (max-width: ${pxToRem(1150)}) {
     .nav__menu {
@@ -117,8 +115,11 @@ export default styled.header`
     .nav__menu {
       display: none;
     }
+    .nav__right {
+    ${layout("flex")}
     .bars {
-      display: block;
+      color: ${white};
+    }
     }
   }
   @media (max-width: ${pxToRem(550)}) {
