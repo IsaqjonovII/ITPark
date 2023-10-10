@@ -110,7 +110,7 @@ export default styled.div`
         }
     }
   }
-  @media screen and (max-width: ${pxToRem(500)}) {
+  @media screen and (max-width: ${pxToRem(550)}) {
     .news__header {
         ${layout("center")}
         .search__wrp {
